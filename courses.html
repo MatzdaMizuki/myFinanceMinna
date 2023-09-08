@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="description" content="Provides UI to subscribe/register">
+    <title>Miss Finance Minna - Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="StyleSheets/custom.css">
+    <link rel="icon" href="Images/common/favicon.jpg"> 
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+
+</head>
+  <body>
+    <header>
+        <!--Navigation bar-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+            <a 
+                href="index.html" 
+                class="navbar-brand mb-0 h1">
+                <img 
+                class="d-inline-block align-top"
+                src="Images/common/favicon.jpg"
+                width="30" height="30" />
+                    My Finance Minna
+            </a>
+            <button 
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                class="navbar-toggler"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" 
+                id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="index.html" class="nav-link dropdown-toggle"
+                        id="navbarDroppdown" role="button"
+                        data-bs-toggle="dropdown"
+                        aaria-expanded="false"
+                        >
+                            Home
+                        </a>
+                        <ul class="dropdown-menu"
+                        aria-labelledby="navbarDropdown">
+                        <li><a href="index.html" class="dropdown-item">Home</a></li>
+                        <li><a href="index.html#story" class="dropdown-item">Our Story</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="courses.html" class="nav-link dropdown-toggle active"
+                        id="navbarDroppdown" role="button"
+                        data-bs-toggle="dropdown"
+                        aaria-expanded="false"
+                        >
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu"
+                        aria-labelledby="navbarDropdown">
+                        <li><a href="courses.html" class="dropdown-item">6 weeks course</a></li>
+                        <li><a href="courses.html#all_courses" class="dropdown-item">All courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="resource.html" class="nav-link">
+                            Resource
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="newsletter.html" class="nav-link">
+                            News Letter
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="contact.html" class="nav-link">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!--header image-->
+        <div
+            class="masthead"
+            style="background-image: url('Images/courses/background-image.jpg');"
+        >
+        <div class="color-overlay d-flex justify-content-center align-items-center">
+            <h1>Take your finances to the next level</h1>
+        </div>
+        </div>
+    </header>
+    <main>
+        <!-- The '6 weeks course' section with Sessions, Details, Logistics Divisions-->
+        <section id="6_weeks_course">
+            <div class="container clearfix">
+                <div class="text-center">
+                    <h2 class="p-5">6 weeks course</h2>
+                    <p class="lead text-muted">
+                        The Build Your Financial Wellbeing program is a compact 6-week program of 5 sessions, 
+                        which will take you through the key principles of financial wellbeing, wealth building, and investing. 
+                        The program will be hands-on, including some group sessions as well as several 1-on-1 coaching sessions 
+                        to design your path to financial wellbeing and determine the concrete steps to get there.
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- Session 1 -->
+                        <div class="col-lg-4 session-container">
+                            <div class="session">
+                                <div class="d-flex justify-content-center">
+                                    <span class="badge rounded-pill text-bg-secondary mt-3 mb-3">Joint group session led by coach, 120mins</span> 
+                                </div>
+                                <img src="Images/courses/girls1.jpg" alt="Two women sitting at beach" class="img-fluid session_image"> 
+                                <h4>1 – Foundation of financial wellbeing</h4>
+                                <p>
+                                    &bull; <strong>Why</strong> is financial wellbeing important?<br>
+                                    &bull; <strong>Dreaming big</strong> – defining your dream life and the financial elements required to make it into a reality<br>
+                                    &bull; <strong>Key principles</strong> of sound financial management<br>
+                                    &bull; <strong>Power of investing</strong> <br>
+                                    &bull; Addressing <strong>mental barriers</strong> to building wealth
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Session 2 -->
+                        <div class="col-lg-4 session-container">
+                            <div class="session">
+                                <div class="d-flex justify-content-center">
+                                    <span class="badge rounded-pill text-bg-secondary mt-3 mb-3">Individual 1-on-1 session with coach, 90mins</span>  
+                                </div>
+                                <img src="Images/courses/girl1.jpg" alt="A woman sitting down and smiling" class="img-fluid session_image">
+                                <h4>2 – Where do you stand now and where do you want to go?</h4>
+                                <p>
+                                    &bull; Reviewing your <strong>personal financial situation</strong> – how close are you to realizing your objectives?<br>
+                                    &bull; <strong>Step-by-step</strong> analysis of your financial situation<br>
+                                    &bull; Understanding the <strong>opportunities and risks</strong><br>
+                                    &bull; Benchmarking the <strong>returns and costs</strong> – are you making the most of your assets?<br>
+                                    &bull; Creating an <strong>action plan</strong> that's tailored to your situation<br>
+                                </p>
+                            </div>                       
+                        </div>
+                        <!-- Session 3 -->
+                        <div class="col-lg-4 session-container">
+                            <div class="session">
+                                <div class="d-flex justify-content-center">
+                                    <span class="badge rounded-pill text-bg-secondary mt-3 mb-3">Individual 1-on-1 session with coach, 60mins</span>
+                                </div>
+                                <img src="Images/courses/girl2.jpg" alt="A woman in dress smiling" class="img-fluid session_image">    
+                                <h4>3 – Take control of your financial flows</h4>
+                                <p>
+                                    &bull; <strong>Taking control</strong> of your monthly financial flows (i.e., what comes in and what goes out)<br>
+                                    &bull; Optimizing your <strong>income and expenses</strong> to accelerate wealth building<br>
+                                    &bull; What is holding you back – addressing <strong>mental barriers</strong><br>
+                                    &bull; <strong>How much</strong> can you realistically save, invest, and spend?
+                                </p> 
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Session 4 -->
+                        <div class="col-lg-4 session-container">
+                            <div class="session">
+                                <div class="d-flex justify-content-center">
+                                    <span class="badge rounded-pill text-bg-secondary mt-3 mb-3">Joint group session led by coach, 120mins</span>
+                                </div>
+                                <img src="Images/courses/girls2.jpg" alt="Two women attending in group discussion" class="img-fluid session_image">
+                                <h4>4 – Making your wealth grow</h4>
+                                <p>
+                                    &bull; <strong>Key principles</strong> of investing for building personal wealth<br>
+                                    &bull; Defining your <strong>investment strategy</strong> <br>
+                                    &bull; How to set up <strong>automatic investments</strong> to minimize your time commitment<br>
+                                    &bull; Understanding <strong>risks</strong> and protecting your future<br>
+                                    &bull; <strong>Family</strong> – how to consider your partner and children?<br>
+                                </p>
+                           </div>
+                        </div>            
+                        <!-- Session 5 -->
+                        <div class="col-lg-4 session-container">
+                            <div class="session">
+                                <div class="d-flex justify-content-center">
+                                    <span class="badge rounded-pill text-bg-secondary  mt-3 mb-3">Individual 1-on-1 session with coach, 60mins</span>
+                                </div>
+                                <img src="Images/courses/girl3.jpg" alt="A woman in green top is smiling gently" class="img-fluid session_image">
+                                <h4>5 – Being in the driver seat</h4>
+                                <p>
+                                    &bull;<strong>Finalizing</strong> your financial plan, including your tailored investment strategy<br>
+                                    &bull;Determining concrete <strong>steps and milestones</strong> on your way to financial future<br>
+                                    &bull;Celebrate your <strong>achievement</strong><br>
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tools & Resources Section-->
+        <section>
+            <div class="container"> 
+                <h3>Key tools and resources included in the program</h3>
+                <!-- row class as background-->
+                <div class="row bg-light p-4 rounded shadow">
+                    <!-- Tools -->
+                    <div class="col-12 col-lg-4">
+                        <img class="icon" src="Images/courses/tools.svg" alt="icon with gear">
+                        <h4> Tools </h4>
+                        <div>
+                            <ul>
+                                <li class="font-weight-medium custom-li">Personal Net Worth template, where you can see your Net Worth and track your progress over time</li>
+                                <li class="font-weight-medium custom-li">Monthly Financial Flows template, where you can track money coming in and going out, and determine amounts for saving, investing and spending</li>
+                                <li class="font-weight-medium custom-li">Passive Income template, where you can simulate the level of investment needed for creating your target passive income</li>
+                                <li class="font-weight-medium custom-li">Retirement Forecast template, where you can project your financial situation after retirement</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Actopm Plan-->
+                    <div class="col-12 col-lg-4">
+                        <img class="icon" src="Images/courses/action_plan.svg" alt="icon with check list">
+                        <h4>Action Plan</h4>
+                        <div>
+                            <ul>
+                                <li class="font-weight-medium custom-li">Personal Financial Plan template including your tailored investment strategy, including my feedback and advice</li>
+                                <li class="font-weight-medium custom-li">Playbooks on key topics, e.g., automating finances, opening an investment account, criteria for choosing investments, how to invest for kids</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Resources-->
+                    <div class="col-12 col-lg-4">
+                        <img class="icon" src="Images/courses/resources.svg" alt="icon with 3 items on the hand">
+                        <h4>Resources</h4>
+                        <div>
+                            <ul>
+                                <li class="font-weight-medium custom-li">Criteria for selecting elements to your investment portfolio</li>
+                                <li class="font-weight-medium custom-li">Curated list of the best financial tools, books and podcasts that I would recommend for further self-education</li>
+                            </ul>
+                        </div>
+                    </div> <!--div for Resources-->
+                </div> <!-- container for grid background box-->
+            </div> <!-- Container for Tools section-->
+        </section>
+        <!--Section about Detail of 6 weeks course-->
+        <section id="details_and_tools">
+            <div class="container-md p-3">
+                <div class="text-center">
+                    <h3>Details of our journey together...</h3>
+                    <p class="lead text-muted"> A quick grance at the logicstics and pricing</p>
+                </div>
+                <div class="row my-5 g5 justify-content-around align-items-center">
+                    <!-- accordion -->
+                    <div class="accordion id='details">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#logistics" aria-expanded="true"
+                                aria-controls="logistics">Logistics</button> 
+                            </h2>
+                            <div id="logistics" class="accordion-collapse collapse show"
+                            aria-labelledby="heading-1" data-bs-parent="details">
+                                <div class="accordion-body">
+                                    <img src="Images/courses/logistics.svg" alt="Icon with a box and watch to represent logistics" class="icon">
+                                    <div id="course"></div>
+                                    <div>
+                                        <ul>
+                                            <li>Video recordings will be available if required (but I encourage you to join live to benefit from the discussion!)</li>
+                                            <li>Your three 1-on-1 coaching sessions will be bookable online with availabilities both in the daytime or in the evening during the week</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#price" aria-expanded="false"
+                                aria-controls="price">Price</button> 
+                            </h2>
+                            <div id="price" class="accordion-collapse collapse"
+                            aria-labelledby="heading-2" data-bs-parent="details">
+                                <div class="accordion-body">
+                                    <img class="icon" src="Images/courses/price.svg" alt="Icon with Euro mark price tag">   
+                                    <div>Price of the program is EUR 990, including:
+                                        <ul>
+                                            <li class="font-weight-medium custom-li">7.5 hours of personalized 1-on-1 coaching and group training</li>
+                                            <li class="font-weight-medium custom-li">Live support to answer your personal questions</li>
+                                            <li class="font-weight-medium custom-li">Library of tools, materials, playbooks and resources</li>
+                                            <li class="font-weight-medium custom-li">Access to a community of like-minded people</li>
+                                            <li class="font-weight-medium custom-li">Success guarantee including money back guarantee</li>
+                                        </ul>      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gurantee -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#gurantee" aria-expanded="true"
+                                aria-controls="gurantee">Gurantee</button> 
+                            </h2>
+                            <div id="gurantee" class="accordion-collapse collapse"
+                            aria-labelledby="heading-3" data-bs-parent="details">
+                                <div class="accordion-body">
+                                    <img class="icon" src="Images/courses/money_back.svg" alt="money returning on hand">
+                                    <p>
+                                        Money back guarantee for 30 days: If for some reason you are not satisfied with the course, 
+                                        and you show me that you have completed the homework and tried to apply the course learnings, 
+                                        I will give you money back during 30 days from the course start
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- What to expect-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#expectations" aria-expanded="false"
+                                aria-controls="expectations">What to expect</button> 
+                            </h2>
+                            <div id="expectations" class="accordion-collapse collapse"
+                            aria-labelledby="heading-4" data-bs-parent="details">
+                                <div class="accordion-body">
+                                    <img class="icon" src="Images/courses/expectation.svg" alt="Icon with a person thinking">
+                                    <div>
+                                        <ul>
+                                            <li>1-on-1 personalized advice for your situation</li>
+                                            <li>Inspiring discussion in a small group</li>
+                                            <li>Getting clarity on your financial strengths and weaknesses, and how to keep track of your situation over time</li>
+                                            <li>Defining concrete steps on how to take your finances to the next level and build wealth to realize your dreams</li>
+                                        </ul>  
+                                    </div>                                              
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#commitment" aria-expanded="true"
+                                aria-controls="commitment">Your Commitment</button> 
+                            </h2>
+                            <div id="commitment" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="details">
+                                <div class="accordion-body">
+                                    <img  class="icon" src="Images/courses/committment.svg" alt="Icon with two rings" > 
+                                    <div>
+                                        <ul>
+                                            <li>Join virtual sessions and do homework (Note: this may take some time depending on your situation, but it’s worth it!)</li>
+                                            <li>Be prepared to share your financial situation (only to the coach, and to the extent you’re comfortable to share)</li>
+                                        </ul>     
+                                    </div> <!-- div for list items-->
+                                </div> <!-- div for accordion body-->
+                            </div> <!-- div for accordion body container -->
+                        </div> <!-- div for accordion-item-->
+                    </div> <!--div for accordion items -->
+                </div> <!-- div for container for accordions -->
+            </div> <!--div for header of Details section-->
+        </section>
+        <!-- A section All courses in the tab -->
+        <section id="all_courses">
+            <h2 class="p-5">All Courses</h2>
+            <div class="container-md">
+                <div class="row justify-content-center">
+                    <!-- Article for Individual Coaching -->
+                    <div class="card col-12 col-lg-4 bg-light p-3 rounded shadow">
+                        <img src="Images/courses/girl4.jpg" alt="A woman with curly hair" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Individual Financial Coaching</h5>
+                            <p class="card-text">Individual financial coaching by the hour to discuss your personal questions and receive targeted advice</p>
+                        </div>
+                    </div>
+                    <!-- Information for Couple financial planning session -->
+                    <div class="card col-12 col-lg-4 bg-light p-3 rounded shadow">
+                        <img src="Images/courses/couple.jpg" alt="A woman and a man on bicycles" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Couple's financial planning sessions</h5>
+                        </div>
+                    </div>
+                    <!-- Information for B2B financial coaching -->
+                    <div class="card col-12 col-lg-4 bg-light p-3 rounded shadow">
+                        <img src="Images/courses/girls4.jpg" alt="A woman and a man on bicycles" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">B2B coaching programs for women in the workforce</h5>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section for warning -->
+        <section>
+            <h2 class="p-5">Important &ndash; please read</h2>
+            <article class="container-md">
+                <div class="col-12 bg-light p-3 mb-5 rounded shadow">
+                    <ul>
+                        <li class="lead text-muted">I do not provide investment, legal or tax advice nor sell any financial products, but will guide you through criteria and options</li>
+                        <li class="lead text-muted">All decisions are taken by you–I do not assume any liability</li>
+                        <li class="lead text-muted">I will keep your information confidential–happy to discuss this if you have specific needs</li>
+                    </ul>                                        
+                </div>   
+            </article>                    
+        </section> 
+    </main>
+       
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <script src="courses.js"></script>
+    <!--handlebar JS-->
+    <script id="course-template" type="text/x-handlebars-template">
+        <p>
+            <ul>
+                <li>The course will run for 6 weeks from {{course_start_date}} to {{course_end_date}}. Group sessions (in English) will be scheduled as follows (choose either option 1 or 2):</li>
+            </ul>
+        </p>
+        <table class="table">
+            <!-- Table header -->
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Option 1</th>
+                    <th>Option 2</th>
+                </tr>
+            </thead>
+            
+            <!-- Table body -->
+            <tbody>
+                <tr>
+                    <td>Foundations of Financial Wellbeing</td>
+                    <td>{{option1_date_display_1}}</td>
+                    <td>{{option2_date_display_1}}</td>
+                </tr>
+                <tr>
+                    <td>Making Your Wealth Grow</td>
+                    <td>{{option1_date_display_2}}</td>
+                    <td>{{option2_date_display_2}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </script>
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Courses</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> About Minna</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Register</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Schedule Free Intro Chat</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Subscribe to News Letter</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Reserve seat for Courses</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Legal Stuff</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Terms & Conditions</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Privacy Policy</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contact</h5>
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i>minna.schmidt@outlook.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row d-flex justify-content-between align-items-center"> <!-- Added d-flex and justify-content-between -->
+                <div class="col-md-7 col-lg-8">
+                    <p> Copyright 2023 All rights reserved by My Finance Minna</p>
+                </div> 
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-md-right"> <!-- Removed text-center -->
+
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="description" content="Provides UI to subscribe/register">
+    <title>Miss Finance Minna - Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="StyleSheets/custom.css">
+    <link rel="icon" href="Images/common/favicon.jpg"> 
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+
+</head>
+  <body>
+    <header>
+        <!--Navigation bar-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+            <a 
+                href="index.html" 
+                class="navbar-brand mb-0 h1">
+                <img 
+                class="d-inline-block align-top"
+                src="Images/common/favicon.jpg"
+                width="30" height="30" />
+                    My Finance Minna
+            </a>
+            <button 
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                class="navbar-toggler"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" 
+                id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="index.html" class="nav-link dropdown-toggle"
+                        id="navbarDroppdown" role="button"
+                        data-bs-toggle="dropdown"
+                        aaria-expanded="false"
+                        >
+                            Home
+                        </a>
+                        <ul class="dropdown-menu"
+                        aria-labelledby="navbarDropdown">
+                        <li><a href="index.html" class="dropdown-item">Home</a></li>
+                        <li><a href="index.html#story" class="dropdown-item">Our Story</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="courses.html" class="nav-link dropdown-toggle"
+                        id="navbarDroppdown" role="button"
+                        data-bs-toggle="dropdown"
+                        aaria-expanded="false"
+                        >
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu"
+                        aria-labelledby="navbarDropdown">
+                        <li><a href="courses.html" class="dropdown-item">6 weeks course</a></li>
+                        <li><a href="courses.html#all_courses" class="dropdown-item">All courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="resource.html" class="nav-link">
+                            Resource
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="newsletter.html" class="nav-link">
+                            News Letter
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="contact.html" class="nav-link active">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!--header image-->
+        <div
+            class="masthead"
+            style="background-image: url('Images/contact/background-image.jpg');"
+        >
+        <div class="color-overlay d-flex justify-content-center align-items-center">
+            <h1>Call to Action</h1>
+        </div>
+        </div>
+    </header>
+    <main>
+        <!--How to get started today-->
+        <section>
+            <h2 class="p-5">How to get started today</h2>
+            <p class="lead text-muted p-5">
+                Most people do not know their current personal Net Worth or how their financial situation will be in their retirement years.
+                It is far easier to ignore things. This is effectively saying to yourself: “I have no control over my finances”.
+                But there is power in acknowledging your situation and taking ownership of problems and making a plan.
+                If you want to stop worrying about money, you need to take responsibility and do something about it.
+                When you do, wonderful things can happen.
+            </p>
+        </section>
+        <!--Section for How to get started today which includes articles for subscribe, intro chat, reserve course-->
+        <section>
+            <!--Subscribe to news Letter-->
+            <section>
+                <h3 class="p-5">1 - Subscribe to News Letter</h3>
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 p-5  bg-light rounded shadow">
+                        <form action="https://formspree.io/f/mqkvqaag" method="POST">
+                            <div class="input-group p-3"> <!-- Added margin-bottom for spacing -->
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" id="name" name="name" class="form-control"> <!-- Bootstrap form-control class for styling -->
+                            </div>
+                            <div class="input-group p-3"> <!-- Added margin-bottom for spacing -->
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control"> <!-- Bootstrap form-control class for styling -->
+                            </div>                
+                            <button type="submit" class="btn btn-outline-secondary">Subscribe</button> <!-- Bootstrap button styling -->
+                        </form>
+                    </div>
+                    <figure class="col-12 col-lg-6 order-1 order-lg-2 p-5">
+                        <img src="Images/contact/girl2.jpg" alt="girl reading from tablet" class="img-fluid">
+                    </figure>
+                    </div>
+                </div>             
+            </section>
+            <!--Book a free intro chat-->
+            <section>
+                <h3 class="p-5">2 - Book free introductry call</h3>
+                <div class="container text-center">
+                    <div class="row">  <!-- Added the class here -->
+                        <figure class="col-12 col-lg-6 p-5">
+                            <img src="Images/contact/girl1.jpg" alt="Two women sitting at beach" class="img-fluid">
+                        </figure>
+                        <div class="col-12 col-lg-6 p-5 bg-light rounded shadow">
+                            <!-- Replace the paragraph with Calendly embed code here -->
+                            <div class="calendly-inline-widget mt=0" data-url="https://calendly.com/minna-schmidt/financial-wellbeing-intro-call" style="min-width:320px;height:630px;"></div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+            <!-- Reserve a seat for the course-->
+            <section>
+                <h3 class="p-5">3 - Reserve a seat for the course</h3>
+                <div class="row">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1 p-5 bg-light rounded shadow">
+                        <!--script to provide input for course drop down using handlebar-->
+                        <form action="https://formspree.io/f/mleybdda" method="POST">
+                            <div class="input-group p-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                            </div>
+
+                            <div class="input-group p-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control">
+                            </div>
+                            <div class="input-group p-3">
+                                <label for="course" class="form-label">Course:</label>
+                                <select id="course" name="course" class="form-control" required>
+                                    <option value="">--Please choose--</option>
+                                    <option value="6_weeks_course">6 Weeks Course</option>
+                                    <option value="individual_coaching">Individual Financial Coaching</option>
+                                    <option value="couples_financial_planning">Couple's Financial Planning</option>
+                                    <option value="b2b_coaching">B2B Coaching for Women at Work</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary btn-lg m-3">Reserve a seat</button>
+                        </form>                                                                                    
+                    </div>
+                    <figure class="col-12 col-lg-6 order-1 order-lg-2 p-5">
+                        <img src="Images/contact/girl3.jpg" alt="woman stretching arm in nature" class="img-fluid">
+                    </figure>
+                </div> 
+            </section>              
+        </section>    
+        <!--Section for Benjamin Franklin quotes-->
+        <section>
+            <div class="row my-3 g5 justify-content-around align-items-center">
+                <figure class="col-lg-6 p-5">
+                    <img src="Images/contact/girl4.jpg" alt="Two women sitting at beach" class="img-fluid">
+                </figure>
+                <figure class="text-center p-5">
+                    <blockquote class="blockquote">
+                        <p>An investment in knowledge pays the best interest.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Benjamin Franklin
+                    </figcaption>
+                </figure>
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <script src="courses.js"></script>
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Courses</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> About Minna</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Register</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Schedule Free Intro Chat</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Subscribe to News Letter</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Reserve seat for Courses</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Legal Stuff</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Terms & Conditions</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Privacy Policy</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contact</h5>
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i>minna.schmidt@outlook.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row d-flex justify-content-between align-items-center"> <!-- Added d-flex and justify-content-between -->
+                <div class="col-md-7 col-lg-8">
+                    <p> Copyright 2023 All rights reserved by My Finance Minna</p>
+                </div> 
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-md-right"> <!-- Removed text-center -->
+
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+</body>
+</html>

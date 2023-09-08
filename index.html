@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="description" content="Provides UI to subscribe/register">
+    <title>Miss Finance Minna - Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="StyleSheets/custom.css">
+    <link rel="icon" href="Images/common/favicon.jpg"> 
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+
+</head>
+  <body>
+    <header>
+        <!--Navigation bar-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+            <a 
+                href="index.html" 
+                class="navbar-brand mb-0 h1">
+                <img 
+                class="d-inline-block align-top"
+                src="Images/common/favicon.jpg"
+                width="30" height="30" />
+                    My Finance Minna
+            </a>
+            <button 
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                class="navbar-toggler"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" 
+                id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="index.html" class="nav-link dropdown-toggle active"
+                        id="navbarDroppdown" role="button"
+                        data-bs-toggle="dropdown"
+                        aaria-expanded="false"
+                        >
+                            Home
+                        </a>
+                        <ul class="dropdown-menu"
+                        aria-labelledby="navbarDropdown">
+                        <li><a href="index.html" class="dropdown-item">Home</a></li>
+                        <li><a href="index.html#story" class="dropdown-item">Our Story</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="courses.html" class="nav-link dropdown-toggle"
+                        id="navbarDroppdown" role="button"
+                        data-bs-toggle="dropdown"
+                        aaria-expanded="false"
+                        >
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu"
+                        aria-labelledby="navbarDropdown">
+                        <li><a href="courses.html" class="dropdown-item">6 weeks course</a></li>
+                        <li><a href="courses.html#all_courses" class="dropdown-item">All courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="resource.html" class="nav-link">
+                            Resource
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="newsletter.html" class="nav-link">
+                            News Letter
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="contact.html" class="nav-link">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!--header image-->
+        <div
+            class="masthead"
+            style="background-image: url('Images/index/background-image.jpg');"
+        >
+        <div class="color-overlay d-flex justify-content-center align-items-center">
+            <h1>Build your Financial Wellbeing</h1>
+        </div>
+        </div>
+    </header>
+    <main>
+        <!--1st section about financial wellbeing-->
+        <section>
+            <h2 class="p-5">What is Financial Wellbeing?</h2>
+            <div class="row d-flex justify-content-center px-4">
+                <figure class="col-12 col-lg-5 px-4">
+                    <img class="img-fluid" src="Images/index/girl4.jpg" alt="A girl at a desk">
+                </figure>
+                <div class="col-12 col-lg-7 px-4">
+                    <ul>
+                        <li class="lead text-muted">Do you know how much your Net Worth is?</li>
+                        <li class="lead text-muted">Do you have what it takes to cover unexpected situations?</li>
+                        <li class="lead text-muted">Do you have assets that build wealth for you when you live your life?</li>
+                        <li class="lead text-muted">Do you know that you are not being taken advantage of?</li>
+                        <li class="lead text-muted">Do you have a consistent investment strategy?</li>
+                        <li class="lead text-muted">Do you feel secure for your retirement?</li>
+                        <li class="lead text-muted">Do you have the means that enable you to live your dream life?</li>
+                    </ul>
+                    <p class="lead text-muted">
+                        Financial wellbeing is knowing the answers to all these questions and more.<br>
+                        It means you are in control of your finances, and of your life.
+                    </p>
+                </div>
+            </div>                     
+        </section>
+        <!--2nd section about financial wellbeing--> 
+        <section>
+            <h3 class="p-5">How do you feel about money?</h2>
+            <div class="row d-flex justify-content-center px-4">
+                <figure class="col-12 col-lg-4 px-4 order-1 order-lg-2">
+                    <img class="img-fluid" src="Images/index/girl1.jpg" alt="A girl in pink dress.">
+                </figure>
+                <div class="col-12 col-lg-8 px-4 order-2 order-lg-1">
+                    <p class="lead text-muted">
+                        How often do you check your bank account? <br>
+                        Do you experience negative surprises or panic when you look at it? <br>
+                        Are you a financial firefighter? <br> 
+                        The last thing you want to look at every day is your bank account…<br><br>
+                        But if you are anxious about money, you will constantly think about it.<br>
+                        Or are you an ostrich?<br>
+                        Sticking your head into the sand and rarely, if ever, looking at your financial situation holistically and how to make the most of it and become financially free?<br><br>
+                        If you are currently in a “luxury situation” with a great income, it is easy to just live your life and not worry about it, even if most of the money you receive quickly disappears somewhere…<br>
+                        When things are going well for you, that is the best time to develop your long-term strategy and put it into action. <br>
+                        So that you’re prepared when something happens.<br><br>
+                        The biggest mistake is, we think we have time.
+                    </p>
+                </div> 
+            </div> 
+        </section>
+        <!--3rd section about financial wellbeing-->
+        <section>
+            <h3 class="p-5">Is now the timing to do it?</h2>
+            <div class="row d-flex justify-content-center px-4">
+                <figure class="col-12 col-lg-4 px-4">
+                    <img class="img-fluid" src="Images/index/girl2.jpg" alt="A girl with glasses">
+                </figure>
+                <div class="col-12 col-lg-8 px-4">
+                    <p class="lead text-muted">
+                        I read probably 15-20 books on investing and financial management per year. Why?<br>
+                        Because I'm a finance nerd and I love those books!! 
+                        But I know this is not for everyone.
+                        So, if you want to take control of your finances, here are two options.<br><br>
+                        <strong>Option 1: Do-it-yourself. </strong><br>
+                        There are tons of good materials available, even for free. 
+                        You can simply check the Resources tab to find my curated list of the best financial tools, books and podcasts. 
+                        With them, you will learn things about investing that will forever change how you think about money and that you can implement in your life.<br><br> 
+                        <strong>Option 2: Get help.  </strong><br>
+                        If you want to reach better results faster, join my Financial Wellbeing coaching program. 
+                        In this program you will join a group of other people just like you. 
+                        You can share your wins, you can ask questions, and you can learn about ways to accelerate wealth creation. 
+                        And we will develop your plan together, in dedicated 1-on-1 sessions. 
+                        The program includes a success guarantee for concrete results.<br>
+                        Whichever option you choose, remember that you can take control of your financial situation and make your dream future into reality.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--4th section about financial wellbeing-->
+        <section>
+            <h3 class="p-5">What could financial freedom mean for you?</h2>
+            <div class="row d-flex justify-content-center px-4">
+                <figure class="col-12 col-lg-5 px-4">
+                    <img class="img-fluid" src="Images/index/girl3.jpg" alt="A girl looking over ocean">
+                </figure>
+                <div class="col-12 col-lg-7 px-4">
+                    <ul>
+                        <li class="lead text-muted">Saying goodbye to the stress of your work, waking up in the morning whenever you like and spending your time doing what you really love?</li>
+                        <li class="lead text-muted">Being able to take 3 months off each year to travel the world?</li>
+                        <li class="lead text-muted">Knowing that you and your loved ones will be able to get to safety, even if a disaster strikes?</li>
+                        <li class="lead text-muted">Being able to splurge and treat your family and parents to a luxury stay at an all-inclusive resort in the Maldives?</li>
+                        <li class="lead text-muted">Being able to significantly support a cause that your heart beats to?</li>
+                        <li class="lead text-muted">Buying your dream home to refurbish and decorate according to your wishes, then inviting friends to come for long relaxed visits?</li>
+                    </ul>
+                    <p class="lead text-muted">   
+                        What’s stopping you?
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--Article about Dream Home-->
+        <article id="story">
+            <h2 class="p-5">Our Story</h2>
+            <h3 class="p-5">Dream Home</h3>
+            <div class="row d-flex justify-content-center p-4">
+                <figure class="col-12 col-lg-5 px-4 order-1 order-lg-2">
+                    <img class="img-fluid" src="Images/stories/minna2.jpg" alt="Life will not wait message" />
+                </figure>
+                <div class="col-12 col-lg-7 px-3 order-2 order-lg-1">
+                    <p class="lead text-muted">
+                        This was not supposed to happen to me. How could I be so stupid?<br>
+                        I had studied Finance and Economics, I had an MBA from a great university, I was working at one of the world’s top management consultancies, McKinsey, coveted by thousands of applicants each year.
+                        But I had not done ANY investments for myself. Nobody ever told me to start investing at business school. In my family nobody invested. And I never took the time to learn to do it myself.
+                        Yes, it’s kind of embarrassing. But what really got me upset were the MISSED OPPORTUNITIES. Had I started to invest when I was younger – even just 100 Euros a month – the power of compound interest would have built me a solid financial foundation to use as I like.
+                        It’s not that I had any real difficulties in life. I have been very lucky. My husband and I had well paying jobs, but the money just came in and went out. No investing, no long-term perspective, no wealth building.
+                        And then something happened.
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center p-4">
+                <figure class="col-12 col-lg-2 px-4">
+                    <img class="img-fluid" src="Images/index/home.jpg" alt="Life will not wait message"/>
+                </figure>
+                <div class="col-12 col-lg-10 px-3">
+                    <p class="lead text-muted">
+                        The DREAM home. The one with the big terrace, where a view of the Swiss Alps invites to go hiking. With lovely wooden floors. Where we see our kids’ kindergarten from the window. 
+                        When we first visited, I felt instantly at home and saw myself there, walking in slippers, with my coffee cup in my hand.
+                        Me and my husband were 38 years old and realized that we had the opportunity of a lifetime to buy our dream home. 
+                        We had been looking for years.<br>
+                        But we did not know if we could afford the down payment.
+                        We had to scrape together every penny of cash we had, and it was still not enough.<br>
+                        We went to speak with various advisors who sent us in different directions. 
+                        After months of painful work, uncertainty, stress and calculations at night, we managed to find a solution, but had to pledge all our pension savings.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center p-4">
+                <figure class="col-12 col-lg-5 px-4 order-1 order-lg-2">
+                    <img src="Images/index/minna.jpg" alt="Mina's profile in Mountain" class="img-fluid">
+                </figure>
+                <div class="col-12 col-lg-7 px-3 order-2 order-lg-1">
+                    <p class="lead text-muted">
+                        It was a humbling experience. 
+                        And I decided then and there to take control of our finances, so we would always know where we stand, and to put our money to work.
+                        I learned a LOT from this experience. <br>
+                        I realized that financial wellbeing gives you freedom, security and more options.<br>
+                        And secondly, it is not easy to do this (organizing finances and investing), even if you are from the industry. 
+                        It takes time, reading, thinking, going through your life’s matters. 
+                        Sometimes you and your partner are not on the same page. There are complications.<br>
+                        And that’s why it’s easier to push it to a later time, even if we know how important it would be.<br>
+                        In retrospect, going through this was one of the best things that happened to me.
+                        And that’s why, I’m here today.
+                        I want to pass those lessons on to you and help you through your own journey to financial wellbeing. 
+                    </p>  
+                </div>
+            </div>
+        </article>
+        <section id="minna">
+            <h3 class="p-5">Meat your coach, Minna</h3>
+            <div class="row justify-content-center">
+                <figure class="col-12 col-lg-5 d-flex p-5">
+                    <img src="Images/stories/minna1.jpg" alt="Minna in casual clothes in garden" class="img-fluid mx-auto">
+                </figure>
+            </div>       
+            <div class="row bg-light p-5 my-5">
+                <div class="col-12 col-lg-2 p-3">
+                    <img class="icon" src="Images/stories/global.svg" alt="Icon with a persion thinking" >
+                    <p>
+                        Born and raised in Finland, global citizen having lived in 6 countries on 3 continents.                       
+                    </p>
+                </div>
+                <div class="col-12 col-lg-2 p-3">
+                    <img  class="icon" src="Images/stories/mother.svg" alt="Icon with two rings" > 
+                    <p>
+                        Lives in Switzerland and is married and a mother of two.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-2 p-3">
+                    <img class="icon" src="Images/stories/intelligent.svg" alt="Icon with braini and circuit">
+                    <p>
+                        15 years in consulting for the financial industry and asset management at McKinsey & Company and BlackRock.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-2 p-3">
+                    <img class="icon" src="Images/stories/passion.svg" alt="Icon with a persion thinking" >
+                    <p>
+                        Passionate about investing and empowering women on their financial journey.                       
+                    </p>
+                </div>
+                <div class="col-12 col-lg-2 p-3">
+                        <img  class="icon" src="Images/stories/certification.svg" alt="Icon with money growing" > 
+                        <p>
+                            INSEAD MBA and Master of Science in Economics.
+                        </p>
+                </div>
+                <div class="col-12 col-lg-2 p-3">
+                    <img class="icon" src="Images/stories/investment.svg" alt="Icon with plant with money growing">
+                    <p>
+                        Managing own investment portfolio with six figures.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <article id="testimonial">
+            <h3 class="p-5">What my clients say....</h3>
+            <div id="carouselExampleIndicators" class="carousel slide p-5">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Images/stories/venessa.png" class="d-block w-100" alt="Vanessa's photo with dark wood background">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/index/yasmine.png" class="d-block w-100" alt="Yasmine's photo with dark wood background">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/index/lavinia.png" class="d-block w-100" alt="Lavinia's photo with dark wood background">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </article>
+        <br>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <script src="courses.js"></script>
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Courses</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> About Minna</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Register</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Schedule Free Intro Chat</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Subscribe to News Letter</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Reserve seat for Courses</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Legal Stuff</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Terms & Conditions</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Privacy Policy</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contact</h5>
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i>minna.schmidt@outlook.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row d-flex justify-content-between align-items-center"> <!-- Added d-flex and justify-content-between -->
+                <div class="col-md-7 col-lg-8">
+                    <p> Copyright 2023 All rights reserved by My Finance Minna</p>
+                </div> 
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-md-right"> <!-- Removed text-center -->
+
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="description" content="Provides UI to subscribe/register">
+    <title>Miss Finance Minna - Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--for icons from bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="StyleSheets/custom.css">
+    <link rel="icon" href="Images/common/favicon.jpg"> 
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+
+</head>
+  <body>
+    <header>
+        <!--Navigation bar-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+            <a 
+                href="index.html" 
+                class="navbar-brand mb-0 h1">
+                <img 
+                class="d-inline-block align-top"
+                src="Images/common/favicon.jpg"
+                width="30" height="30" />
+                    My Finance Minna
+            </a>
+            <button 
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                class="navbar-toggler"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" 
+                id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="index.html" class="nav-link dropdown-toggle"
+                        id="navbarDroppdown" role="button"
+                        data-bs-toggle="dropdown"
+                        aaria-expanded="false"
+                        >
+                            Home
+                        </a>
+                        <ul class="dropdown-menu"
+                        aria-labelledby="navbarDropdown">
+                        <li><a href="index.html" class="dropdown-item">Home</a></li>
+                        <li><a href="index.html#story" class="dropdown-item">Our Story</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="courses.html" class="nav-link dropdown-toggle"
+                        id="navbarDroppdown" role="button"
+                        data-bs-toggle="dropdown"
+                        aaria-expanded="false"
+                        >
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu"
+                        aria-labelledby="navbarDropdown">
+                        <li><a href="courses.html" class="dropdown-item">6 weeks course</a></li>
+                        <li><a href="courses.html#all_courses" class="dropdown-item">All courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="resource.html" class="nav-link active">
+                            Resource
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="newsletter.html" class="nav-link">
+                            News Letter
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="contact.html" class="nav-link">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!--header image-->
+        <div
+            class="masthead"
+            style="background-image: url('Images/resource/background-image.jpg');"
+        >
+        <div class="color-overlay d-flex justify-content-center align-items-center">
+            <h1>Resources</h1>
+        </div>
+        </div>
+    </header>
+    <main>
+        <!--Recommeded resources opening comment-->
+        <h2 class="p-5">Recommended Resources</h2>   
+        <!--Books-->
+        <section>
+            <h3 class="p-5">Books</h3>
+            <p class="lead text-muted px-5 py-3">
+                Note: Some of the books are country-specific, in which case I’ve indicated this in the description.<br>
+                Most of the learnings and insights from the US-focused books are universally relevant, 
+                but product recommendations and investment strategies are focused for that country 
+                and not necessarily applicable or available to people living elsewhere.
+            </p>
+            <div class="container-md">
+                <div class="row justify-content-center">                       
+                    <!-- Book 1-->
+                    <div class="card col-12 col-lg-4 bg-light p-3 rounded shadow">
+                        <div class="card-body text-center py-4">
+                            <img src="Images/resource/simple_path_wealth.png" 
+                                alt="book cover image of the book The Simple Path to Wealth" 
+                                class="img-fluid"
+                                style="width: 50%; height: auto;"
+                            >
+                            <h4 class="card-title pt-5 book-title">The Simple Path to Wealth</h4>
+                            <h4 class="card-title p3-5 book-author">by J.L. Collins</h4>
+                            <p class="lead card-subtitle">
+                                Great inspirational book that is one of the most clearest and easily understandable books on investing for wealth generation.
+                            </p>
+                            <p class="my-4 fw-bold">
+                                €24.75
+                            </p>
+                            <a href="https://www.amazon.de/-/en/dp/1533667926/" class="btn btn-lg mt-3 custom-btn">View Detail</a>
+                        </div>
+                    </div>
+                    <!-- Book 2 -->
+                    <div class="card col-12 col-lg-4 bg-light p-3 rounded shadow">
+                        <div class="card-body text-center py-4">
+                            <img src="Images/resource/balance.png" 
+                                alt="book cover image of the book Balance" 
+                                class="img-fluid"
+                                style="width: 50%; height: auto;"
+                            >
+                            <h4 class="card-title pt-5 book-title">Balance</h4>
+                            <h4 class="card-title pb-3 book-author">Andrew Hallam</h4>
+                            <p class="lead card-subtitle">
+                                Andrew Hallam is an investment guru that inspires with his clear and funny writing on how to achieve financial freedom.
+                            </p>
+                            <p class="my-4 fw-bold">
+                                €16.99
+                            </p>
+                            <a href="https://www.amazon.de/-/en/dp/1774580756" class="btn btn-lg mt-3 custom-btn">View Detail</a>
+                        </div>
+                    </div>
+                    <!-- Book 3 -->
+                    <div class="card col-12 col-lg-4 bg-light p-3 rounded shadow">
+                        <div class="card-body text-center py-4">
+                            <img src="Images/resource/millionaire_expat.png" 
+                                alt="book cover image of the book Balance" 
+                                class="img-fluid"
+                                style="width: 50%; height: auto;"
+                            >
+                            <h4 class="card-title pt-5 book-title">Millionaire Expat</h4>
+                            <h4 class="card-title pb-3 book-author">by Andrew Hallam</h4>
+                            <p class="lead card-subtitle">
+                                Hallam’s book that focuses on helping expats navigate financial challenges and build wealth. Includes also some specific advice for particular nationalities.
+                            </p>
+                            <p class="my-4 fw-bold">
+                                €19.99
+                            </p>
+                            <a href="https://www.amazon.de/-/en/dp/1119840104" class="btn btn-lg mt-3 custom-btn">View Detail</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="container-md">
+                <div class="row justify-content-center">                       
+                    <!-- Book 4-->
+                    <div class="card col-12 col-lg-4 bg-light p-3 rounded shadow">
+                        <div class="card-body text-center py-4">
+                            <img src="Images/resource/teach_u_rich.png" 
+                                alt="book cover image of the book The Simple Path to Wealth" 
+                                class="img-fluid"
+                                style="width: 50%; height: auto;"
+                            >
+                            <h4 class="card-title pt-5 book-title">I Will Teach You To Be Rich</h4>
+                            <h4 class="card-title p3-5 book-author">by Ramit Sethi</h4>
+                            <p class="lead card-subtitle">
+                                Book that focuses how to get finances under control, including managing credit cards, bank accounts, setting up retirement savings, conscious spending and even how to have money discussions with your partner.
+                            </p>
+                            <p class="my-4 fw-bold">
+                                €16.39
+                            </p>
+                            <a href="https://www.amazon.de/-/en/dp/1529306582" class="btn btn-lg mt-3 custom-btn">View Detail</a>
+                        </div>
+                    </div>
+                    <!-- Book 5-->
+                    <div class="card col-12 col-lg-4 bg-light p-3 rounded shadow">
+                        <div class="card-body text-center py-4">
+                            <img src="Images/resource/mastering_mkt_cycle.png" 
+                                alt="book cover image of the book The Simple Path to Wealth" 
+                                class="img-fluid"
+                                style="width: 50%; height: auto;"
+                            >
+                            <h4 class="card-title pt-5 book-title">Mastering the Market Cycle</h4>
+                            <h4 class="card-title p3-5 book-author">by Howard Marks</h4>
+                            <p class="lead card-subtitle">
+                                Book that focuses how to get finances under control, including managing credit cards, bank accounts, setting up retirement savings, conscious spending and even how to have money discussions with your partner.
+                            </p>
+                            <p class="my-4 fw-bold">
+                                €18.66
+                            </p>
+                            <a href="https://www.amazon.de/-/en/dp/1473695686" class="btn btn-lg mt-3 custom-btn">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>          
+            <!--Podcasts--> 
+            <section>
+                <h3 class="p-5">Podcasts</h3>
+                <div class="container-md">
+                    <!--Podcast 1-->
+                    <div class="row p-5 my-3 bg-light rounded shadow">
+                        <figure class="col-lg-4">
+                            <img src="Images/resource/memo.jpg" alt="Cover image of the Podcast The Memo by Howard Marks" class="img-fluid">
+                        </figure>
+                        <div class="col-lg-8">
+                            <h4 class="p-3">The Memo by Howard Marks</h4>
+                            <p class="lead text-muted p-3">
+                                Insightful observations on how markets work and how investors’ psychology influences the state of the markets.<br> 
+                                For those who are interested in understanding the cyclical phenomena that repeat regularly in the markets and gaining an advantage for investing.
+                            </p>
+                            <div class="p-3">
+                                <a href="https://podcasts.apple.com/jp/podcast/the-memo-by-howard-marks/id1521551570"><i class="bi bi-broadcast-pin"></i>Apple Podcasts</a>
+                                <p></p>
+                                <a href="https://open.spotify.com/show/3tDPiD9KFQ19MGBCsNAbDr?si=17cc95a9a75c4dcf"><i class="bi bi-spotify"></i>Spotify</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <!--Podcast 2-->
+                    <div class="row p-5 my-3 bg-light rounded shadow">
+                        <figure class="col-lg-4">
+                            <img src="Images/resource/bid.jpg" alt="Cover image of the Podcast The Memo by Howard Marks" class="img-fluid">
+                        </figure>
+                        <div class="col-lg-8">
+                            <h4 class="p-3">The Bid</h4>
+                            <p class="lead text-muted p-3">
+                                Podcast from world’s biggest Asset Manager BlackRock focuses on investment themes, market outlook, retirement and various other investment-related topics.
+                            </p>
+                            <div class="p-3">
+                                <a href="https://podcasts.apple.com/gb/podcast/the-bid/id1441032838"><i class="bi bi-broadcast-pin"></i>Apple Podcasts</a>
+                                <p></p>
+                                <a href="https://open.spotify.com/show/56rc5KHG6Btk19lEAmw7I2?si=a1fd7c5220b14829"><i class="bi bi-spotify"></i>Spotify</a>
+                            </div>  
+                        </div>
+                    </div> 
+                    <!--Podcast 3-->
+                    <div class="row p-5 my-3 bg-light rounded shadow">
+                        <figure class="col-lg-4">
+                            <img src="Images/resource/wallet.jpg" alt="Cover image of the Podcast The Memo by Howard Marks" class="img-fluid">
+                        </figure>
+                        <div class="col-lg-8">
+                            <h4 class="p-3">The Wallet</h4>
+                            <p class="lead text-muted p-3">
+                                Podcast by Emily Bellet, focusing on different topics that are relevant for women from inheritance, taxes, investing, and beyond, including interviews with experts.
+                            </p>
+                            <div class="p-3">
+                                <a href="https://podcasts.apple.com/gb/podcast/the-wallet/id1520695849"><i class="bi bi-broadcast-pin"></i>Apple Podcasts</a>
+                                <p></p>
+                                <a href="https://open.spotify.com/show/5nUAIDpJaKfFmzaF5DzYa2"><i class="bi bi-spotify"></i>Spotify</a>
+                            </div>  
+                        </div>
+                    </div> 
+                </div>
+                <div class="container-md">
+                    <!--Podcast 4-->
+                    <div class="row p-5 my-3 bg-light rounded shadow">
+                        <figure class="col-lg-4">
+                            <img src="Images/resource/money_talks.jpg" alt="Cover image of the Podcast The Memo by Howard Marks" class="img-fluid">
+                        </figure>
+                        <div class="col-lg-8">
+                            <h4 class="p-3">Economist Money Talks</h4>
+                            <p class="lead text-muted p-3">
+                                Interesting in-depth reportage of key current financial and investing themes.
+                            </p>
+                            <div class="p-3">
+                                <a href="https://podcasts.apple.com/us/podcast/money-talks-from-the-economist/id420929545"><i class="bi bi-broadcast-pin"></i>Apple Podcasts</a>
+                                <p></p>
+                                <a href="https://open.spotify.com/show/2Yvo8QxZf7WlSEsIwKjtX4"><i class="bi bi-spotify"></i>Spotify</a>
+                            </div>  
+                        </div>
+                    </div>
+                    <!--Podcast 5-->
+                    <div class="row p-5 my-3 bg-light rounded shadow">
+                        <figure class="col-lg-4">
+                            <img src="Images/resource/iwt.jpg" alt="Cover image of the Podcast The Memo by Howard Marks" class="img-fluid">
+                        </figure>
+                        <div class="col-lg-8">
+                            <h4 class="p-3">I Will Teach You To Be Rich</h4>
+                            <p class="lead text-muted p-3">
+                                Entertaining podcast where couples discuss their financial situation with financial coach Ramit Sethi.<br> 
+                                Sprinkled with good advice and delves on the money mindset and emotional context in relationships.<br> 
+                                US-based but lessons are applicable anywhere.
+                            </p>
+                            <div class="p-3">
+                                <a href="https://podcasts.apple.com/us/podcast/i-will-teach-you-to-be-rich/id1577864998"><i class="bi bi-broadcast-pin"></i>Apple Podcasts</a>
+                                <p></p>
+                                <a href="https://open.spotify.com/show/11ktWYpzznMCpvGtXsiYxE?si=5fdb2a2ee5e241b6"><i class="bi bi-spotify"></i>Spotify</a>
+                            </div>  
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <!-- Websites-->
+            <section>
+                <h3 class="p-5">Websites</h3>
+                <div class="container-md">
+                    <div class="row justify-content-center">                       
+                        <!-- Webiste 1-->
+                        <div class="card col-12 col-lg-4 bg-light p-3 rounded shadow">
+                            <div class="card-body text-center py-4">
+                                <img src="Images/resource/swiss.jpg" 
+                                    alt="book cover image of the book The Simple Path to Wealth" 
+                                    class="img-fluid"
+                                    style="width: 100%; height: auto;"
+                                >
+                                <h4 class="card-title pt-5 book-title">The Poor Swiss</h4>
+                                <p class="lead card-subtitle">
+                                    Swiss-specific blogger who provides valuable tips, reviews, recommendations and useful articles on <br>
+                                    investing, retirement, real-estate purchase etc. <br><br>
+                                    Focused on Switzerland.
+                                </p>
+                                <a href="https://thepoorswiss.com/" class="btn btn-lg mt-3 custom-btn">Visit Site</a>
+                            </div>
+                        </div>
+                        <!-- Website 2-->
+                        <div class="card col-12 col-lg-4 bg-light p-3 rounded shadow">
+                            <div class="card-body text-center py-4">
+                                <img src="Images/resource/marmot.jpg" 
+                                    alt="book cover image of the book The Simple Path to Wealth" 
+                                    class="img-fluid"
+                                    style="width: 100%; height: auto;"
+                                >
+                                <h4 class="card-title pt-5 book-title">Marmot.Finance</h4>
+                                <p class="lead card-subtitle">
+                                    Swiss-based investment manager focusing on empowering and inspiring women on investing. <br><br>
+                                    Marmot organizes regularly free webinars and has tools <br>
+                                    (e.g., Money Makeover Quiz) available on their website.
+                                </p>
+                                <a href="https://www.marmot.finance/" class="btn btn-lg mt-3 custom-btn">Visit Site</a>
+                            </div>
+                        </div>
+                        <!-- Website 3 -->
+                        <div class="card col-12 col-lg-4 bg-light p-3 rounded shadow">
+                            <div class="card-body text-center py-4">
+                                <img src="Images/resource/cnn.jpg" 
+                                    alt="book cover image of the book The Simple Path to Wealth" 
+                                    class="img-fluid"
+                                    style="width: 100%; height: auto;"
+                                >
+                                <h4 class="card-title pt-5 book-title">CNN Greed & Fear Indicator</h4>
+                                <p class="lead card-subtitle">
+                                    This is an indicator that shows the sentiment of the financial markets at any given moment, using multiple data points.
+                                    When markets are in “Greed” mode, stock prices are generally going up and investors are in an exuberant buying mode. 
+                                    When markets are in “Fear” mode, stock prices are generally going down and investors are more fearful of losses and in selling mode.
+                                </p>
+                                <a href="https://edition.cnn.com/markets/fear-and-greed" class="btn btn-lg mt-3 custom-btn">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>              
+        </section>    
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <script src="courses.js"></script>
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Courses</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> About Minna</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Register</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Schedule Free Intro Chat</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Subscribe to News Letter</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Reserve seat for Courses</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Legal Stuff</h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Terms & Conditions</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration:none;"> Privacy Policy</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contact</h5>
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i>minna.schmidt@outlook.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row d-flex justify-content-between align-items-center"> <!-- Added d-flex and justify-content-between -->
+                <div class="col-md-7 col-lg-8">
+                    <p> Copyright 2023 All rights reserved by My Finance Minna</p>
+                </div> 
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-md-right"> <!-- Removed text-center -->
+
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+</body>
+</html>
