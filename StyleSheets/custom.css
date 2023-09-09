@@ -182,5 +182,16 @@ h3 {
     height: auto;
     display: block;
 }
+/*button design for filter by category on Newsletter page*/
+.btn-custom-selected {
+    background-color: rgb(51, 152, 127) !important;
+    border-color: rgb(51, 152, 127) !important;
+    color: #fff !important;
+}
+
+.btn-custom-selected:hover {
+    background-color: rgba(51, 152, 127, 0.8) !important;
+    color: #fff !important;
+}
 
 
