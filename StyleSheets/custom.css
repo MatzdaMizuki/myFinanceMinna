@@ -279,3 +279,7 @@ h3 {
     margin-top: 15px; /* Spacing between quote and author */
     font-style: italic; /* Italic style for the author */
 }
+/* custom styling for footer */
+.text-custom-green {
+    color: rgb(159, 244, 223) !important;
+}
