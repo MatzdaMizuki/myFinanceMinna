@@ -122,9 +122,50 @@ h3 {
     display: table;
     clear: both;
 }
+/* custom styling for index - our story page, carousel/testimonial. */
+.testimonial-container {
+    background-color: #e8f9e9;  /* pale green */
+    padding: 20px;
+    border-radius: 10px;  /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* optional shadow for depth */
+    max-width: 800px;  /* you can set a max-width to prevent it from being too wide on large screens */
+    margin: 0 auto;  /* center the container if it's less than full width */
+}
+.testimonial-image {
+    display: block;
+    width: 80px; /* Adjust as needed */
+    height: 80px;
+    border-radius: 50%; /* Makes the image round */
+    margin: 10px auto; /* Centers the image and gives space above and below */
+}
+.carousel-inner .carousel-item {
+    height: auto !important; /* remove fixed height if any */
+    overflow: visible !important; /* show overflowing content */
+}
+
+.testimonial-container {
+    /* ... existing styles ... */
+    overflow: auto; /* allows scroll if content is too much, optional */
+    max-height: 90vh; /* limits height to 90% of the viewport height, optional */
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: darkgray !important;
+}
+/* This styles the carousel indicators (the dots) */
+.carousel-indicators button {
+    background-color: darkgray !important; /* Change the color of the dot */
+    width: 12px; /* Increase the width of the dot */
+    height: 12px; /* Increase the height of the dot */
+    border-radius: 50%; /* Ensure the dot remains circular */
+    margin-right: 5px; /* Space between dots */
+    margin-left: 5px; /* Space between dots */
+}
+
+/* This styles the active carousel indicator (the currently displayed slide) */
+.carousel-indicators .active {
+    background-color: black !important; /* Change the color of the active dot */
 }
 
 .accordion-header {

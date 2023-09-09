@@ -301,24 +301,69 @@
             </div>
         </section>
         <article id="testimonial">
+            <!-- This is the heading for the testimonials section -->
             <h3 class="p-5">What my clients say....</h3>
+            
+            <!-- This is the start of the carousel/slider -->
             <div id="carouselExampleIndicators" class="carousel slide p-5">
+                
+                <!-- These are the navigation dots/buttons for the carousel. 
+                     Each button corresponds to a testimonial. -->
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <!-- The 'active' class indicates which testimonial shows first. -->
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
+                
+                <!-- This is where the testimonials are stored -->
                 <div class="carousel-inner">
+                    
+                    <!-- This is the first testimonial. The 'active' class means it's the first one shown. -->
                     <div class="carousel-item active">
-                        <img src="Images/stories/venessa.png" class="d-block w-100" alt="Vanessa's photo with dark wood background">
+                        
+                        <!-- This container holds the testimonial content -->
+                        <div class="testimonial-container">
+                            
+                            <!-- This is the profile picture of the person giving the testimonial -->
+                            <img src="Images/index/vanessa.jpg" alt="Vanessa D." class="testimonial-image">                           
+                            
+                            <!-- This is the testimonial text -->
+                            <blockquote>
+                                "The Build Your Financial Wellbeing program has been a total wake up call for me. I have been living my life totally blind about money and lacking intentionality. I was lucky not to have to worry about it since I started working over 20 years ago, as I made good money and was in the comfortable position not to count every penny. But years went by, and I did not save any of that income coming from my hard work. As I look at what I could have accomplished or acquired in these last 20 years to bring me and my family safety, I feel terrible.<br><br>
+                                Minna’s training has given me the awareness needed to look at my earnings differently and has helped me understand how to be intentional about it. I now feel ready to be strategic and to invest in my future and that of my kids. The class is rich in information, clear, compelling and Minna is absolutely wonderful. Approachable, discrete, available and highly competent. I can only recommend all women who want to feel free to go after their craziest dreams to take this class!"<br><br>
+                                <footer>- Vanessa D., Luxembourg</footer>
+                            </blockquote>
+                        </div>
                     </div>
+                    <!--2nd testimonial -->                                              
                     <div class="carousel-item">
-                        <img src="Images/index/yasmine.png" class="d-block w-100" alt="Yasmine's photo with dark wood background">
+                        <div class="testimonial-container">
+                            <img src="Images/index/yasmine.jpg" alt="Vanessa D." class="testimonial-image">   
+                            <blockquote>
+                                "Building my financial well-being with Minna has been an incredible journey. The programme takes you step by step through the ‘why’, the ‘what’ and the ‘how’ from a financial perspective and, importantly, also from a human perspective. <br><br>
+                                Minna is a great listener and patiently guided me and answered all my questions but also helped me address so many fears I had: fear of looking into my finances, fear or projecting myself, fear of investing… <br><br>
+                                I now feel in empowered and in control of my life. And I can achieve my dreams with confidence and security. I’m forever grateful for this Minna."<br><br>
+                                <footer>- Yasmine, Luxembourg</footer>
+                            </blockquote>
+                        </div>
                     </div>
+                    <!-- 3rd testimonial -->
                     <div class="carousel-item">
-                        <img src="Images/index/lavinia.png" class="d-block w-100" alt="Lavinia's photo with dark wood background">
+                        <div class="testimonial-container">
+                            <img src="Images/index/lavinia.jpeg" alt="Vanessa D." class="testimonial-image">   
+                            <blockquote>
+                                "The journey with Minna can be a real personal revolution. Becoming aware of one's all-round financial situation and the hidden potential in good management of our money passes through an inner investigation into our dreams and the concrete goals we want to reach, the lifestyle we realistically want to obtain and the exact moment in which we want to achieve these goals.<br><br>
+                                It is the beginning of a path of independence and self-awareness that goes far beyond money. They are all essential traits of female empowerment that today's women are increasingly seeking and that Minna helps to realize by providing essential tools. By encouraging communication within the family, in order to be able to identify a common vision, objectives and investment project that is suitable for the specific case, this course can be the means to strike up a conversation on topics that need to be addressed in a deep and long-term relationship.<br><br>
+                                The planning related to investments also for children or for retirement purposes completes the picture of how broad and varied can be the range of options to analyze with the help of Minna.<br><br>
+                                Her decennial competence shines through a clear and exhaustive communication and allows her course ample room for customization.
+                                it feels good thanks to her and it feels good with her: her approach is professional and at the same time extremely helpful and understanding. Knowing her was a real gift!"<br><br>
+                                <footer>- Lavinia A., Architect, Luxembourg</footer>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
+                <!-- These are the left and right navigation buttons for the carousel -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -329,6 +374,7 @@
                 </button>
             </div>
         </article>
+        
         <br>
     </main>
 
