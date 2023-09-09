@@ -44,7 +44,7 @@ const articles = [
 {
     title: 'Are you an expat?',
     date: '2023-08-18',
-    description: '',
+    description: 'How do you feel about managing your finances in your new home country?',
     link: 'https://www.instagram.com/p/CwDx4t_t1yO/',
     category: 'investing'
 },
@@ -77,9 +77,9 @@ const articles = [
     category: 'wellbeing'
 },
 {
-    title: 'Are you embarrased',
+    title: 'Are you embarrased?',
     date: '2023-07-28',
-    description: '',
+    description: 'Money and wealth are considered taboos in our society. They can be a source of shame and embarrassment as well?',
     link: 'https://www.instagram.com/p/CvPomajPRNI/',
     category: 'mission'
 },
