@@ -193,20 +193,48 @@ h3 {
     background-color: rgba(51, 152, 127, 0.8) !important;
     color: #fff !important;
 }
-/* custom styling for Contact Us page */
-.img-container {
-    height: 630px; /* Set the height to match the calendar height */
-    overflow: hidden; /* Hide the overflow */
+/* custom styling for Contact Us page. */
+.outer-container {
+    border: 2px solid rgba(218, 223, 222, 0.5); /* Subtle border color */
+    padding: 20px; /* Spacing inside the outer container */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 30px; /* Spacing between sections */
 }
 
-.img-container {
-    height: 630px; /* Set the height to match the calendar height */
-    overflow: hidden; /* Hide the overflow */
+.inner-container {
+    margin: 0 15px; /* Margin to create spacing between inner and outer containers */
 }
 
-.cropped-img {
-    object-fit: cover; /* Crop and resize the image */
-    object-position: center center; /* Center the image */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+/* custom styling for Benjamin Franklin quote in Contact Us page */
+.quote-container {
+    position: relative; /* To position the quote absolutely within this container */
+    overflow: hidden; /* To ensure everything stays within the boundaries */
+}
+
+.quote-image {
+    width: 100%; /* Cover the full width of the container */
+    height: 500px; /* Set a fixed height to make it larger */
+    object-fit: cover; /* Ensure the image covers the space without distorting */
+    object-position: center; /* Center the image */
+}
+
+.quote-content {
+    position: absolute; /* Position over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better legibility */
+    width: 80%; /* Set a width constraint */
+    text-align: center; /* Center the text content */
+}
+
+.quote-text {
+    font-size: 24px; /* Larger font size for the quote */
+    line-height: 1.5; /* Better line spacing */
+}
+
+.quote-author {
+    margin-top: 15px; /* Spacing between quote and author */
+    font-style: italic; /* Italic style for the author */
 }
