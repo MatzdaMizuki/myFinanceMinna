@@ -155,15 +155,18 @@ h3 {
     text-align: center; /* to center the text inside the button */
 }
 /* custom styling for Resource page */
-.custom-btn {
-    border-color: rgb(51, 152, 127);
-    color: rgb(51, 152, 127); /* Sets the text color */
-  }
 
-.custom-btn:hover {
-    background-color: rgb(51, 152, 127);
-    color: #fff;  /* Sets the text color */
-  }
+.btn.custom-btn {
+    background-color: #f8f9fa !important; /* Matched to bg-light color */
+    border-color: rgb(51, 152, 127) !important;
+    color: rgb(51, 152, 127) !important; /* Sets the text color */
+}
+
+.btn.custom-btn:hover {
+    background-color: rgb(51, 152, 127) !important;
+    color: #fff !important;  /* Sets the text color */
+}
+
 
 .book-title {
     font-size: 22px;
