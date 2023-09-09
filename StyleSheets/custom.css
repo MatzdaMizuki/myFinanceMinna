@@ -193,5 +193,20 @@ h3 {
     background-color: rgba(51, 152, 127, 0.8) !important;
     color: #fff !important;
 }
+/* custom styling for Contact Us page */
+.img-container {
+    height: 630px; /* Set the height to match the calendar height */
+    overflow: hidden; /* Hide the overflow */
+}
 
+.img-container {
+    height: 630px; /* Set the height to match the calendar height */
+    overflow: hidden; /* Hide the overflow */
+}
 
+.cropped-img {
+    object-fit: cover; /* Crop and resize the image */
+    object-position: center center; /* Center the image */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
