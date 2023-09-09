@@ -46,6 +46,9 @@ function filterByCategory(category) {
       let readMoreButton = document.createElement("a");
       readMoreButton.href = article.link;
       readMoreButton.textContent = "Read More";
+      // assign customed design for Read More button.
+      readMoreButton.className = "btn custom-btn"; 
+
 
       cardBody.appendChild(imgDiv);
       cardBody.appendChild(articleTitle);
