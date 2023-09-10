@@ -94,28 +94,28 @@ const articles = [
 {
     title: 'Couples that have a shared financial vision...',
     date: '2023-07-22',
-    description: '',
-    link: 'How to align on a common financial vision in a relationship?n\One of my favorite podcasts is the "I will teach you to be rich" from @ramit. In it, he does deep interviews with couples on their finances and their relationship with money.',
+    description: 'How to align on a common financial vision in a relationship?n\One of my favorite podcasts is the "I will teach you to be rich" from @ramit. In it, he does deep interviews with couples on their finances and their relationship with money.',
+    link: 'https://www.instagram.com/p/Cu_ylPHNIuC/',
     category: 'collaboration'
 },
 {
     title: 'My story',
     date: '2023-07-18',
-    description: '',
+    description: 'Summer is a great time to reconnect with yourself. Where do I come from? What do I want to become?Am I present in the moment?',
     link: 'https://www.instagram.com/p/Cu1v3GFrIbV/',
     category: 'mission'
 },
 {
     title: 'What frustrates you about your finances?',
     date: '2023-07-14',
-    description: '',
+    description: 'What frustrates you about your finances?n\ 👉🏻 Are you too busy or overwhelmed to start investing to grow your wealth?',
     link: 'https://www.instagram.com/p/Curn927th9b/',
     category: 'wellbeing'
 },
 {
     title: 'Are you ready to take your finances to the next level?',
     date: '2023-07-13',
-    description: '',
+    description: 'Are you ready to take your finances to the next level? What would it feel like, to know that your assets are growing while you are enjoying your life? That you are building your wealth to live your dream life? 🤩🤩🤩',
     link: 'https://www.instagram.com/p/CupAEpIpGO1/',
     category: 'mission'
 },
