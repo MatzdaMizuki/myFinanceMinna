@@ -2,42 +2,43 @@ const articles = [
   {
     title: 'No pain, no gain?',
     date: '2023-09-06',
-    description: '',
+    description: 'No pain, no gain - is it really like that? 🤔 Well, it is certainly true that investing does require some effort. Firstly, you have to select your investment set-up and define your strategy. So it takes a bit of effort in the beginning to get started 💪'
+    ,
     link: 'https://www.instagram.com/p/Cw0nm7itBVu/',
     category: "investing"
 },
 {
     title: 'The perfect investment strategy...',
     date: '2023-09-05',
-    description: '',
+    description: 'Are you a perfectionist? When it comes to investing, you may be experiencing "analysis paralysis", i.e. looking for a "perfect" investment strategy and the "perfect" moment for starting to invest, and not having any tolerance for failure. I recognize this very well from my early days as investor.',
     link: 'https://www.instagram.com/p/CwxdWp4tGdi/',
     category: "investing"
 },
 {
     title: 'Community really matters',
     date: '2023-08-31',
-    description: "",
+    description: "Why is community so important when you're making a big change, such as taking control of your finances and starting to invest? 🫶",
     link: 'https://www.instagram.com/p/CwmvdqWtOtQ/',
     category: 'collaboration'
 },
 {
     title: 'What can help you grow your Net Worth',
     date: '2023-08-28',
-    description: '',
+    description: '1.Ensure your income is higher than your expenses',
     link: 'https://www.instagram.com/p/CwfS6zjNVQj/',
     category: 'investing'
 },
 {
     title: 'Wealth inequality keeps growing...',
     date: '2023-08-24',
-    description: '',
+    description: 'What is the power of regular, consistent investing? It brings you additional capital income, to complement your regular salary income. It can also be your only source of income, if you have a large enough investment portfolio.',
     link: 'https://www.instagram.com/p/CwVO9UQt6oL/?img_index=1',
     category: 'investing'
 },
 {
     title: 'Financial coaching can help make relatiohships stronger',
     date: '2023-08-21',
-    description: '',
+    description: 'Having a shared understanding and a joint vision on finances with your partner = gold ❤️',
     link: 'https://www.instagram.com/p/CwNrlxuto5Z/?img_index=10',
     category: 'wellbeing'
 },
@@ -51,14 +52,14 @@ const articles = [
 {
     title: 'October',
     date: '2023-08-15',
-    description: '',
+    description: 'This famous saying from Mark Twain nails it down pretty well. Speculating in stocks entails a lot of risk at any time. You need to know what you\'re doing, and stick to low-cost, well-diversified, consistent investing. Any time you start thinking that you could outwin the market by picking some extravagant strategy, you\'re likely to lose. ',
     link: 'https://www.instagram.com/p/Cv8Ahs1t699/',
     category: 'investing'
 },
 {
     title: 'What are the results of financial coaching that you can expect?',
     date: '2023-08-09',
-    description: '',
+    description: 'What are the results of financial coaching that you can expect? 🤔 \n\nIf you are considering taking up financial coaching, you want to achieve concrete results.\nResults that you can expect include:\n\n☑️Getting clarity on your unique financial situation.',
     link: 'https://www.instagram.com/p/CvsmQCdNyQG/',
     category: 'mission'
 },
