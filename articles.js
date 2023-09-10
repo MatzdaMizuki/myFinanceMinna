@@ -73,12 +73,12 @@ const articles = [
 {
     title: 'Confused about retirement saving options?',
     date: '2023-08-02',
-    description: '',
+    description: 'As I was recently checking the progress of my retirement savings, I was reminded of what happened when I had just moved to Switzerland.',
     link: 'https://www.instagram.com/p/Cvc7Vsbt44o/',
     category: 'wellbeing'
 },
 {
-    title: 'Are you embarrased?',
+    title: 'Feeling embarrased?',
     date: '2023-07-28',
     description: 'Money and wealth are considered taboos in our society. They can be a source of shame and embarrassment as well?',
     link: 'https://www.instagram.com/p/CvPomajPRNI/',
@@ -95,7 +95,7 @@ const articles = [
     title: 'Couples that have a shared financial vision...',
     date: '2023-07-22',
     description: '',
-    link: '',
+    link: 'How to align on a common financial vision in a relationship?n\One of my favorite podcasts is the "I will teach you to be rich" from @ramit. In it, he does deep interviews with couples on their finances and their relationship with money.',
     category: 'collaboration'
 },
 {
