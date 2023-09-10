@@ -51,10 +51,14 @@ function filterByCategory(category) {
         articleSummary.textContent = article.description;
 
         // Create a button to read the full article.
-        let readMoreButton = document.createElement("a");
-        readMoreButton.href = article.link;
+        // Create a button to read the full article.
+        let readMoreButton = document.createElement("button");
+        readMoreButton.onclick = function() {
+            window.location.href = article.link;
+        };
         readMoreButton.textContent = "Read More in Instagram";
         readMoreButton.className = "btn custom-btn"; // Apply the custom design
+
 
         // Add all the elements to the card.
         cardBody.appendChild(imgDiv);

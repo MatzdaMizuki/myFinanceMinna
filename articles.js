@@ -66,7 +66,7 @@ const articles = [
 {
     title: 'Riding the stock markets to success',
     date: '2023-08-05',
-    description: '',
+    description: 'nvesting successfully in the stock markets means being prepared for turbulence and staying the course despite the ups and downs. Are you ready to stay disciplined and keep a cool head? ',
     link: 'https://www.instagram.com/p/CvkApvlsrOe/',
     category: 'investing'
 },
