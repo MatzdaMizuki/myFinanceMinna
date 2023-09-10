@@ -256,39 +256,41 @@ div.p-3 a:hover {
     margin: 0 15px; /* Margin to create spacing between inner and outer containers */
 }
 
-/* custom styling for Benjamin Franklin quote in Contact Us page */
 .quote-container {
-    position: relative; /* To position the quote absolutely within this container */
-    overflow: hidden; /* To ensure everything stays within the boundaries */
+    position: relative;
+    overflow: hidden;
 }
 
 .quote-image {
-    width: 100%; /* Cover the full width of the container */
-    height: 500px; /* Set a fixed height to make it larger */
-    object-fit: cover; /* Ensure the image covers the space without distorting */
-    object-position: center; /* Center the image */
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .quote-content {
-    position: absolute; /* Position over the image */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Perfect centering */
-    color: white; /* Text color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better legibility */
-    width: 80%; /* Set a width constraint */
-    text-align: center; /* Center the text content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* Changed text color to black */
+    width: 80%;
+    text-align: center;
+    padding: 15px; /* Added padding for some spacing */
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    border-radius: 10px; /* Optional: Rounded corners for the background */
 }
 
 .quote-text {
-    font-size: 24px; /* Larger font size for the quote */
-    line-height: 1.5; /* Better line spacing */
+    font-size: 24px;
+    line-height: 1.5;
 }
 
 .quote-author {
-    margin-top: 15px; /* Spacing between quote and author */
-    font-style: italic; /* Italic style for the author */
+    margin-top: 15px;
+    font-style: italic;
 }
+
 /* custom styling for footer */
 .text-custom-green {
     color: rgb(159, 244, 223) !important;
