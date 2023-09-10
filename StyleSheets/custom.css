@@ -203,10 +203,12 @@ h3 {
     color: #232628 !important; 
 }
 
-.btn.custom-btn:hover {
+.btn.custom-btn:hover, .btn.custom-btn:focus {
     background-color: rgb(51, 152, 127) !important;
     color: #fff !important;  /* Sets the text color */
 }
+
+
 
 div.p-3 a {
     color: #000; /* This sets the color to black */
