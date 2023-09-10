@@ -233,9 +233,9 @@ div.p-3 a:hover {
 }
 /*button design for filter by category on Newsletter page*/
 .btn-custom-selected {
-    background-color: rgb(51, 152, 127) !important;
+    background-color: #fff !important;
     border-color: rgb(51, 152, 127) !important;
-    color: #fff !important;
+    color: #555 !important;
 }
 
 .btn-custom-selected:hover {
