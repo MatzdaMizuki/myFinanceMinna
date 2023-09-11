@@ -9,7 +9,7 @@
         <meta name="description" content="My Finance Finna - Call to Action">
 
         <!-- Title for the page -->
-        <title>My Finance Minna</title>
+        <title>My Finance Minna - Call to Action</title>
 
         <!-- Link to the Bootstrap CSS framework for easy styling -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="StyleSheets/custom.css">
 
         <!-- Favicon to show in the browser's title/tab bar -->
-        <link rel="icon" href="Images/common/favicon.jpg"> 
+        <link rel="icon" href="Images/common/favicon.jpg" alt="logo for My Finance Mina with cactus"> 
 
         <!-- Handlebars is a templating library -->
         <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
@@ -32,7 +32,7 @@
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
                 <!-- Brand name and logo for the website -->
-                <a  href="index.html" class="navbar-brand mb-0 h1"><img class="d-inline-block align-top" src="Images/common/favicon.jpg"  alt="logo for My Finance Mina with cactus" width="30" height="30" />My Finance Minna</a>
+                <a  href="index.html" class="navbar-brand mb-0 h1"><img class="d-inline-block align-top"src="Images/common/favicon.jpg"  alt="logo for My Finance Mina with cactus" width="30" height="30" />My Finance Minna</a>
                 <!-- Toggle button for mobile views to collapse and expand the navbar -->
                 <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -93,14 +93,14 @@
                         <form action="https://formspree.io/f/mqkvqaag?next=https://my-finance-minna.github.io/home/formspree_reply.html" method="POST">
                             <div class="input-group p-5">
                                 <label for="name" class="form-label">Name:</label>
-                                <input type="text" id="name_news" name="name" class="form-control">
+                                <input type="text" id="name" name="name" class="form-control">
                             </div>
                             <div class="input-group p-5">
                                 <label for="email" class="form-label">Email:</label>
                                 <input type="email" id="email" name="email" class="form-control">
                             </div>                
                             <button type="submit" class="btn custom-btn">Subscribe</button>
-                        </form>                                           
+                        </form>                        
                     </div>
                     <figure class="col-12 col-lg-6 p-5">
                         <img src="Images/contact/girl_newsletter.jpg" alt="image of a woman smiling" class="img-fluid custom-image-height">
@@ -131,17 +131,27 @@
                 <h3 class="p-5">3 - Reserve a seat for the course</h3>
                 <div class="row inner-container">
                     <div class="col-12 col-lg-6 order-2 order-lg-1 p-5 bg-light rounded shadow">
-                        <form id="myForm">
+                        <form action="https://formspree.io/f/mleybdda?next=https://my-finance-minna.github.io/home/formspree_reply.html" method="POST">
                             <div class="input-group p-5">
-                                <label for="name" class="form-label">Name:</label>
-                                <input type="text" id="name_course" name="name" class="form-control">
+                                <label for="name_course" class="form-label">Name:</label>
+                                <input type="text" id="name_course" name="name_course" class="form-control">
                             </div>
                             <div class="input-group p-5">
-                                <label for="email" class="form-label">Email:</label>
-                                <input type="email" id="email" name="email" class="form-control">
-                            </div>                
-                            <button type="submit" class="btn custom-btn">Subscribe</button>
-                        </form>                                                                                                          
+                                <label for="email_course" class="form-label">Email:</label>
+                                <input type="email" id="email_course" name="email_course" class="form-control">
+                            </div>
+                            <div class="input-group p-5">
+                                <label for="course" class="form-label">Course:</label>
+                                <select id="course" name="course" class="form-control" required>
+                                    <option value="">--Please choose--</option>
+                                    <option value="6_weeks_course">6 Weeks Course</option>
+                                    <option value="individual_coaching">Individual Financial Coaching</option>
+                                    <option value="couples_financial_planning">Couple's Financial Planning</option>
+                                    <option value="b2b_coaching">B2B Coaching for Women at Work</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn custom-btn btn-lg m-3">Reserve a seat</button>
+                        </form>                                                                                    
                     </div>
                     <figure class="col-12 col-lg-6 order-1 order-lg-2 p-5">
                         <img src="Images/contact/girl_reserve.jpg" alt="woman stretching arm in nature" class="img-fluid custom-image-height">
@@ -171,7 +181,7 @@
     <!-- Calendly script for embedding the scheduling widget -->
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
     <!-- Custom script for courses functionality -->
-    <script src="courses.js"></script>        
+    <script src="courses.js"></script>
 
     <!-- Footer section with additional links and copyright notice -->
     <footer class="bg-dark text-white pt-5 pb-4">
