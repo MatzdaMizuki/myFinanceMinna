@@ -9,65 +9,67 @@ function filterByCategory(category) {
     // Decide which articles to show: either all of them or only those of a specific category.
     let filteredArticles = category === "all" ? articles : articles.filter(article => article.category === category);
 
-    // This will hold the row of articles; a new row is created every 3 articles.
-    let row;
-
     // Go through each article and create its visual representation on the page.
-    filteredArticles.forEach((article, index) => {
-        // Every third article starts a new row for better visual arrangement.
-        if (index % 3 === 0) {
-            row = document.createElement("div");
-            row.className = "row justify-content-center";
-            archiveSection.appendChild(row);
-        }
-
+    filteredArticles.forEach((article) => {
         // Create a visual card for the article.
         let card = document.createElement("div");
-        card.className = "card col-12 col-lg-4 bg-light p-3 rounded shadow";
+        card.className = "card col-12 bg-light p-3 rounded shadow";
 
         let cardBody = document.createElement("div");
-        cardBody.className = "card-body text-center py-4";
+        cardBody.className = "card-body py-4";
+        let rowDiv = document.createElement("div");
+        rowDiv.className = "row";
 
         // Display the article's image.
         let imgDiv = document.createElement("div");
-        imgDiv.className = "img-container";
+        imgDiv.className = "col-12 col-lg-3 img-container position-relative";
+
         let articleImage = document.createElement("img");
         articleImage.className = "img-fluid";
         articleImage.src = `Images/newsletter/${article.date}.jpg`;
         articleImage.alt = article.title;
-        imgDiv.appendChild(articleImage);
 
-        // Display the article's title.
+        // Create and style the category badge.
+        let categoryBadge = document.createElement("span");
+        categoryBadge.className = "badge rounded-pill text-bg-secondary position-absolute top-10 start-0 p-1";
+        categoryBadge.style = "z-index: 1; font-size: 1em;";
+        categoryBadge.textContent = article.category;
+
+        imgDiv.appendChild(articleImage);
+        imgDiv.appendChild(categoryBadge);
+
+        let textDiv = document.createElement("div");
+        textDiv.className = "col-12 col-lg-9";
+
         let articleTitle = document.createElement("h4");
         articleTitle.className = "card-title pt-5";
         articleTitle.textContent = article.title;
 
-        // Display the article's publication date.
         let articleDate = document.createElement("p");
         articleDate.textContent = article.date;
 
-        // Display a brief summary or description of the article.
         let articleSummary = document.createElement("p");
+        articleSummary.className = "lead text-muted";
         articleSummary.textContent = article.description;
 
-        // Create a button to read the full article.
-        // Create a button to read the full article.
         let readMoreButton = document.createElement("button");
+        readMoreButton.className = "btn btn-lg mt-3 custom-btn";
         readMoreButton.onclick = function() {
             window.location.href = article.link;
         };
         readMoreButton.textContent = "Read More in Instagram";
-        readMoreButton.className = "btn custom-btn"; // Apply the custom design
 
+        textDiv.appendChild(articleTitle);
+        textDiv.appendChild(articleDate);
+        textDiv.appendChild(articleSummary);
+        textDiv.appendChild(readMoreButton);
 
-        // Add all the elements to the card.
-        cardBody.appendChild(imgDiv);
-        cardBody.appendChild(articleTitle);
-        cardBody.appendChild(articleDate);
-        cardBody.appendChild(articleSummary);
-        cardBody.appendChild(readMoreButton);
+        rowDiv.appendChild(imgDiv);
+        rowDiv.appendChild(textDiv);
+
+        cardBody.appendChild(rowDiv);
         card.appendChild(cardBody);
-        row.appendChild(card);
+        archiveSection.appendChild(card);
     });
 
     // Reset all buttons to the default (gray) color.
