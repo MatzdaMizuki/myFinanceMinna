@@ -41,7 +41,7 @@ function filterByCategory(category) {
         let textDiv = document.createElement("div");
         textDiv.className = "col-12 col-lg-9";
 
-        let articleTitle = document.createElement("h4");
+        let articleTitle = document.createElement("h3");
         articleTitle.className = "card-title pt-5";
         articleTitle.textContent = article.title;
 
