@@ -275,16 +275,15 @@
                 <div class="row my-5 g5 justify-content-around align-items-center">
                     <!-- accordion -->
                     <div class="accordion id='details">
+                        <!--Logistics-->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-1">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#logistics" aria-expanded="true"
-                                aria-controls="logistics">Logistics</button> 
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#logistics" aria-expanded="true" aria-controls="logistics">Logistics</button> 
                             </h2>
-                            <div id="logistics" class="accordion-collapse collapse show"
-                            aria-labelledby="heading-1" data-bs-parent="details">
+                            <div id="logistics" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="details">
                                 <div class="accordion-body">
                                     <img src="Images/courses/logistics.svg" alt="Icon with a box and watch to represent logistics" class="icon">
+                                    <!-- JS code will fill in the detail of course (date options for 2 group lessons based on id="course")-->
                                     <div id="course"></div>
                                     <div>
                                         <ul>
@@ -295,14 +294,12 @@
                                 </div>
                             </div>
                         </div>
+                        <!--Price-->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-2">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#price" aria-expanded="false"
-                                aria-controls="price">Price</button> 
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#price" aria-expanded="false" aria-controls="price">Price</button> 
                             </h2>
-                            <div id="price" class="accordion-collapse collapse"
-                            aria-labelledby="heading-2" data-bs-parent="details">
+                            <div id="price" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="details">
                                 <div class="accordion-body">
                                     <img class="icon" src="Images/courses/price.svg" alt="Icon with Euro mark price tag">   
                                     <div>Price of the program is EUR 990, including:
@@ -320,12 +317,9 @@
                         <!-- Gurantee -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-3">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#gurantee" aria-expanded="true"
-                                aria-controls="gurantee">Gurantee</button> 
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gurantee" aria-expanded="true" aria-controls="gurantee">Gurantee</button> 
                             </h2>
-                            <div id="gurantee" class="accordion-collapse collapse"
-                            aria-labelledby="heading-3" data-bs-parent="details">
+                            <div id="gurantee" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="details">
                                 <div class="accordion-body">
                                     <img class="icon" src="Images/courses/money_back.svg" alt="money returning on hand">
                                     <p>
@@ -427,14 +421,11 @@
         </section> 
         <div class="container outer-container">
             <!-- Section for reserving a seat in a course -->
-            <h2 class="p-5">Reserve a seat for the course</h2>
-            <section id="reserve_course">
-                
+            <section id="reserve_course">  
+                <h2 class="p-5">Reserve a seat for the course</h2>
                 <div class="row inner-container">
                     <div class="col-12 col-lg-6 order-2 order-lg-1 p-5 bg-light rounded shadow">
-                        
                         <form action="https://formspree.io/f/mleybdda?next=formspree_reply.html" method="POST">
-
                             <div class="input-group p-5">
                                 <label for="name_course" class="form-label">Name:</label>
                                 <input type="text" id="name_course" name="name_course" class="form-control">
@@ -444,8 +435,8 @@
                                 <input type="email" id="email_course" name="email_course" class="form-control">
                             </div>
                             <div class="input-group p-5">
-                                <label for="course" class="form-label">Course:</label>
-                                <select id="course" name="course" class="form-control" required>
+                                <label for="course_selection" class="form-label">Course:</label>
+                                <select id="course_selection" name="course_selection" class="form-control" required>
                                     <option value="">--Please choose--</option>
                                     <option value="6_weeks_course">6 Weeks Course</option>
                                     <option value="individual_coaching">Individual Financial Coaching</option>
@@ -461,6 +452,7 @@
                     </figure>
                 </div> 
             </section>
+            
         </div>
     </main>
     <!-- Scripts section for various functionalities -->
