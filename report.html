@@ -13,70 +13,76 @@
 
 <body>
 
-    <div class="container my-5">
+    <div class="container container my-5">
         <header class="mb-4">
             <h2>Report</h2>
         </header>
-
+        <div class="text-md-right">Mizuki Matsuda</div>
+        <!--Introduction-->
         <h3 class="mt-4 mb-3">Introduction</h3>
-        <section class="mb-5">
+        <section class=" outer-container mb-5">
             <p class="text-muted">
                 While this began as a student project for a Web Development course, it materialized into a genuine business endeavor. My client, Minna Schmidt, recently launched her career as a Financial Advisor after dedicating 15 years to prestigious firms like McKinsey & Company and Blackrock. Instead of traditional newsletters, Minna has chosen to utilize Instagram to convey her professional insights and messages, emphasizing the importance of investments. Her primary target audience is women, whom she aims to empower towards achieving financial well-being. Additionally, Minna had previously compiled a "brochure" using PowerPoint, which was saved as a PDF. The primary objective of this project was to transform the content of this brochure into a cohesive website. One of the site's pages is specifically designed to showcase an archive of her Instagram posts, serving as a modernized newsletter.
             </p>
+            <!--Purpose-->
+            <article class="inner-container">
+                <h4>Purpose of the website</h4>
+                <p class="text-muted">
+                    This website offers Financial Well-Being Coaching for women. Minna, the financial coach, assists women in creating their "balance sheet", enabling a comprehensive understanding of their entire financial situation. This includes guidance on effectively managing monthly and yearly financial flows. Surprisingly, numerous women, even those in high-paying roles, have not embarked on their investment journeys and often find parts of their finances in disarray. This website primarily promotes a 6-week coaching program while providing useful information such as resources for self-study and a newsletter archive to rectify these issues and empower women towards financial independence.
+                </p>
+            </article>
+            <!--Structure-->
+            <article class="mb-5">
+                <h4>Structure of the website</h4>
+                <ol>
+                    <li class="text-muted">
+                        <span class="lead">Home</span>
+                        <p>
+                            The homepage will welcome visitors with a strong message emphasizing the significance of investing and the core value of financial well-being. Just below the viewport (commonly referred to as "below the fold"), there will be three prominent action buttons: "Read my Newsletter", "Book the Free Intro Session", and "Reserve a Seat for the Course". These buttons will be placed towards the bottom of the page to ensure they are easily accessible without appearing too pushy to the visitor. Moreover, these action buttons also serve as an "index" or guide to other sections of the site. This feature is particularly beneficial for mobile users where the primary navigation is hidden under a hamburger menu, allowing them to quickly discern the site's key offerings even if they aren't directly highlighted on the homepage.
+                        </p>
+                    </li>
+                    <li class="text-muted">
+                        <span class="lead">Our Story</span>
+                        <p>
+                            This page delves into my client's personal journey, highlighting her epiphany about the significance of investment when she and her husband embarked on the journey to purchase their dream home. Additionally, to maintain a concise layout, various testimonials from contented clients are presented in a carousel format. Positioned at the page's bottom is the "free intro chat" integrated with Calendly. This allows users interested in taking the next step to instantly view my client's availability and schedule a conversation.
+                        </p>
+                    </li>                
+                    <li class="text-muted">
+                        <span class="lead">Resource</span>
+                        <p>
+                            My client had previously curated a list of recommended resources, including books, podcasts, and websites, which she shared with past clients. She once mentioned in her brochure: "There are two paths to financial well-being - either access my resource list for free and learn independently, or seek my assistance." Now, rather than sending a PDF via email, this resource list is accessible on a dedicated webpage. This page caters to those who might opt for self-study over enrolling in courses, offering an assortment of resources to enhance their financial knowledge. Each item is conveniently linked to platforms like Apple Podcasts, Spotify, or Amazon. Presenting these materials in an organized manner, depending on their type, is an approach I've adopted from the Harvard Business Review.
+                        </p>
+                    </li>
+                    <li class="text-muted">
+                        <span class="lead">Instagram Posts (Newsletter)</span>
+                        <p>
+                            My client provides daily insights via Instagram, aiming to continually remind women of the significance of their financial well-being. Some posts feature video messages, while others present powerpoint cards, all complemented by in-depth articles. Two pivotal Instagram posts have been spotlighted in the "Most Popular" section of this page. The first outlines her "Mission," detailing what she aims to accomplish through her course. The second, titled "Are you an expat?", underscores her unique value as a financial advisor with an international perspective; a reflection of her diverse clientele.
+                        </p>
+                        <p>
+                            Given the increasing preference for audiovisual content over written text, I've included the original videos for these two highlighted posts. Other articles can be found in the "Archive" section. These posts are arranged chronologically, with the most recent content at the forefront, and they are further organized using a topic-based filter system such as "investing," "well-being," "mission," and "collaboration." Clicking on the "read more" button redirects the user to the detailed post on the financial coach's Instagram page.
+                        </p>
+                    </li>                
+                    <li class="lead text-muted">
+                        <span class="bold-title">Fifth Page (Call to Action)</span>
+                        <p>
+                            After comprehending financial well-being's gravity and juxtaposing the two learning pathways (self-study vs. supported learning), and being further inspired by information from contents found in the resource and newsletter sections, users can make one of three informed decisions:
+                        </p>
+                        <ul>
+                            <li>Subscribe to the newsletter.</li>
+                            <li>Engage in a free introductory chat with the coach.</li>
+                            <li>Secure a spot for the course.</li>
+                        </ul>
+                        <p>
+                            For subscribing and reserving a seat for the course, the website uses Formly. So when a user hits submit, the financial coach will receive an email. Similarly, for booking an introductory chat, the website integrates with the Calendly service to supplement our webpage’s lack of backend.
+                        </p>
+                    </li>
+                </ol>
+            </article>
+           
             
-            <h4>Purpose of the website</h4>
-            <p class="text-muted">
-                This website offers Financial Well-Being Coaching for women. Minna, the financial coach, assists women in creating their "balance sheet", enabling a comprehensive understanding of their entire financial situation. This includes guidance on effectively managing monthly and yearly financial flows. Surprisingly, numerous women, even those in high-paying roles, have not embarked on their investment journeys and often find parts of their finances in disarray. This website primarily promotes a 6-week coaching program while providing useful information such as resources for self-study and a newsletter archive to rectify these issues and empower women towards financial independence.
-            </p>
         </section>
 
 
-        <section class="mb-5">
-            <h4>Structure of the website</h4>
-            <ul>
-                <li class="text-muted">
-                    <span class="lead">Home</span>
-                    <p>
-                        The homepage will welcome visitors with a strong message emphasizing the significance of investing and the core value of financial well-being. Just below the viewport (commonly referred to as "below the fold"), there will be three prominent action buttons: "Read my Newsletter", "Book the Free Intro Session", and "Reserve a Seat for the Course". These buttons will be placed towards the bottom of the page to ensure they are easily accessible without appearing too pushy to the visitor. Moreover, these action buttons also serve as an "index" or guide to other sections of the site. This feature is particularly beneficial for mobile users where the primary navigation is hidden under a hamburger menu, allowing them to quickly discern the site's key offerings even if they aren't directly highlighted on the homepage.
-                    </p>
-                </li>
-                <li class="text-muted">
-                    <span class="lead">Our Story</span>
-                    <p>
-                        This page delves into my client's personal journey, highlighting her epiphany about the significance of investment when she and her husband embarked on the journey to purchase their dream home. Additionally, to maintain a concise layout, various testimonials from contented clients are presented in a carousel format. Positioned at the page's bottom is the "free intro chat" integrated with Calendly. This allows users interested in taking the next step to instantly view my client's availability and schedule a conversation.
-                    </p>
-                </li>                
-                <li class="text-muted">
-                    <span class="lead">Resource</span>
-                    <p>
-                        My client had previously curated a list of recommended resources, including books, podcasts, and websites, which she shared with past clients. She once mentioned in her brochure: "There are two paths to financial well-being - either access my resource list for free and learn independently, or seek my assistance." Now, rather than sending a PDF via email, this resource list is accessible on a dedicated webpage. This page caters to those who might opt for self-study over enrolling in courses, offering an assortment of resources to enhance their financial knowledge. Each item is conveniently linked to platforms like Apple Podcasts, Spotify, or Amazon. Presenting these materials in an organized manner, depending on their type, is an approach I've adopted from the Harvard Business Review.
-                    </p>
-                </li>
-                <li class="lead text-muted">
-                    <span class="bold-title">Instagram Posts (Newsletter)</span>
-                    <p>
-                        My client provides daily insights via Instagram, aiming to continually remind women of the significance of their financial well-being. Some posts feature video messages, while others present powerpoint cards, all complemented by in-depth articles. Two pivotal Instagram posts have been spotlighted in the "Most Popular" section of this page. The first outlines her "Mission," detailing what she aims to accomplish through her course. The second, titled "Are you an expat?", underscores her unique value as a financial advisor with an international perspective; a reflection of her diverse clientele.
-                    </p>
-                    <p>
-                        Given the increasing preference for audiovisual content over written text, I've included the original videos for these two highlighted posts. Other articles can be found in the "Archive" section. These posts are arranged chronologically, with the most recent content at the forefront, and they are further organized using a topic-based filter system such as "investing," "well-being," "mission," and "collaboration." Clicking on the "read more" button redirects the user to the detailed post on the financial coach's Instagram page.
-                    </p>
-                </li>                
-                <li class="lead text-muted">
-                    <span class="bold-title">Fifth Page (Call to Action)</span>
-                    <p>
-                        After comprehending financial well-being's gravity and juxtaposing the two learning pathways (self-study vs. supported learning), and being further inspired by information from contents found in the resource and newsletter sections, users can make one of three informed decisions:
-                    </p>
-                    <ul>
-                        <li>Subscribe to the newsletter.</li>
-                        <li>Engage in a free introductory chat with the coach.</li>
-                        <li>Secure a spot for the course.</li>
-                    </ul>
-                    <p>
-                        For subscribing and reserving a seat for the course, the website uses Formly. So when a user hits submit, the financial coach will receive an email. Similarly, for booking an introductory chat, the website integrates with the Calendly service to supplement our webpage’s lack of backend.
-                    </p>
-                </li>
-            </ul>
-        </section>
         
         <h3 class="mt-4 mb-3">Inspiration</h3>
         <section class="mb=5">
