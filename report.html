@@ -20,7 +20,7 @@
         <div class="text-md-right">Mizuki Matsuda</div>
         <!--Introduction-->
         <h3 class="mt-4 mb-3">Introduction</h3>
-        <div class="text-muted">
+        <div class="text-muted m-5">
             While this began as a student project for a Web Development course, it materialized into a genuine business endeavor. My client, Minna Schmidt, recently launched her career as a Financial Advisor after dedicating 15 years to prestigious firms like McKinsey & Company and Blackrock. Instead of traditional newsletters, Minna has chosen to utilize Instagram to convey her professional insights and messages, emphasizing the importance of investments. Her primary target audience is women, whom she aims to empower towards achieving financial well-being. Additionally, Minna had previously compiled a "brochure" using PowerPoint, which was saved as a PDF. The primary objective of this project was to transform the content of this brochure into a cohesive website. One of the site's pages is specifically designed to showcase an archive of her Instagram posts, serving as a modernized newsletter.
         </div>
         <section class=" outer-container mb-5">
@@ -33,7 +33,7 @@
                 </p>
             </div>
             <!--Structure-->
-            <article class="mb-5">
+            <article class="mb-5 inner-container">
                 <h4>Structure of the website</h4>
                 <ol>
                     <li class="text-muted">
@@ -70,35 +70,31 @@
                         </p>
                     </li>                    
                 </ol>
-            </article>
-           
-            
+            </article> 
         </section>
 
-
-        
         <h3 class="mt-4 mb-3">Inspiration</h3>
-        <section class="mb=5">
+        <section class="outer-container mb-5">
             <ul>
-                <li class="lead text-muted">
-                    <span class="bold-title">Harvard Business Review</span>
-                    <p>
+                <li class="text-muted">
+                    <span class="lead">Harvard Business Review</span>
+                    <p class="m-2 p-2">
                         Harvard Business Review, which is the pinnacle of academic newsletters, inspires me for two reasons. 
                         Upon first impression, its clean and conservative design (white background, quiet font) paired with striking images caught my attention. 
                         we too opted for a minimalist color palette and sourced captivating images from <a href="https://unsplash.com/">Unsplash</a>. 
                     </p>
                     <a href="https://hbr.org/">Link</a>
                 </li>
-                <li class="lead text-muted">
-                    <span class="bold-title">I Will Teach You to Be Rich</span>
-                    <p>
+                <li class="text-muted">
+                    <span class="lead">I Will Teach You to Be Rich</span>
+                    <p class="m-2 p-2">
                         The podcast “I Will Teach You to Be Rich” by Ramit Sethi offers financial advice in an entertaining manner. This is achieved by sharing relatable stories from couples who participate in his coaching sessions, complemented by the host's enthusiastic communication style. The website mirrors this engaging, story-telling approach with its punchy expressions, efficient use of space, and large-size images ensures readers engaged.
                     </p>
                     <a href="https://www.iwillteachyoutoberich.com/">Link</a>
                 </li>
-                <li class="lead text-muted">
-                    <span class="bold-title">Invest like Aysha</span>
-                    <p>
+                <li class="text-muted">
+                    <span class="lead p-2">Invest like Aysha</span>
+                    <p class="m-2 p-2">
                         "Invest like Aisha" is helmed by a Swiss-based financial advisor catering to female clients. Her personal story is both heartbreaking and compelling: her husband tragically died in a car accident the day before she was expecting to give birth to her second child. Facing the uncertainty of maintaining her lifestyle, her experience highlights the critical importance of personal financial management.   It's a poignant reminder that even with a comfortable income today, we must always be prepared for unforeseen circumstances where we might be unable to work, necessitating our savings to sustain us. Moreover, her proactive use of YouTube videos, as seen in "watch my first class", provides an impression of her being action-oriented.   
                     </p>
                     <a href="https://www.investlikeaysha.com/ ">Link</a>
@@ -106,47 +102,47 @@
             </ul>
         </section>
         <h3 class="mt-4 mb-3">Accessibility</h3>
-        <section class="mb=5">
+        <section class="outer-container mb-5">
             <ul>
-                <li class="lead text-muted">
-                    <span class="bold-title">Strong Color Contrast & Alt Text</span>
-                    <p>
+                <li class="text-muted">
+                    <span class="lead">Strong Color Contrast & Alt Text</span>
+                    <p class="m-2 p-2">
                         Using the web accessibility evaluation tool, <a href="https://wave.webaim.org/">WAVE</a>, I've corrected all the errors to ensure strong color contrast and appropriate alternative text for images. 
                     </p>
                 </li>
-                <li class="lead text-muted">
-                    <span class="bold-title">Descriptive Link Text</span>
-                    <p>
+                <li class="text-muted">
+                    <span class="lead">Descriptive Link Text</span>
+                    <p class="m-2 p-2">
                         For the link descriptions, I have avoided using generic link texts such as “click here” or “read more.” Instead, I have opted for descriptive texts that clearly convey the purpose of each link. For instance, on the newsletter page, the button reads “Read more on Instagram.” Similarly, on the resource page, the button for recommended books states “View details on Amazon.” 
                     </p>
                 </li>
-                <li class="lead text-muted">
-                    <span class="bold-title">Keyboard navigation</span>
-                    <p>
+                <li class="text-muted">
+                    <span class="lead">Keyboard navigation</span>
+                    <p class="m-2 p-2">
                         To enhance accessibility for visually impaired users, I have employed the &lt;button&gt; tag combined with an event listener instead of the &lt;a&gt; tag. This methodology enables browsers to appropriately highlight the buttons. When users press "Enter", they are navigated to the designated link. I have instituted this approach on the Resources page, which contains links to recommended books, podcasts, and websites. In a similar vein, on the newsletter page, the "read more in Instagram" buttons—generated dynamically for each article via JavaScript—utilize the &lt;button&gt; tag as opposed to &lt;a&gt;.
                     </p>                    
                 </li>                
             </ul>
         </section>
         <h3 class="mt-4 mb-3">Usability</h3>
-        <section class="mb-5"> <!-- Corrected the class for margin bottom from "mb=5" to "mb-5" -->
+        <section class="outer-container mb-5"> <!-- Corrected the class for margin bottom from "mb=5" to "mb-5" -->
             <ul>
-                <li class="lead text-muted">
-                    <span class="bold-title">Responsive Design</span>
+                <li class="text-muted">
+                    <span class="lead">Responsive Design</span>
                     <p>
                         For layout design, I've utilized Bootstrap's flex design with a column breakpoint for large screens. 
                         For instance, on the index page and the "Contact Us" page, an image and a paragraph are positioned next to each other, each occupying 50% of the space. However, in the mobile view, both the image and paragraph expand to take the full width. Similarly, on the "Course" and "Resource" pages, I've employed a card design. 
                         In the web view, three cards are displayed horizontally, but in the mobile view, each card expands to take up 100% of the width. 
                     </p>
                 </li>
-                <li class="lead text-muted">
-                    <span class="bold-title">Space Management</span>
+                <li class="text-muted">
+                    <span class="lead">Space Management</span>
                     <p>
                         In order to present detailed information without causing the website page length to become excessively long, I implemented a carousel for the "What My Clients Say" section. As of now, my client has three high-quality, lengthy testimonials. With the anticipation that more testimonials will be added in the future, this design choice ensures that the webpage remains uncluttered. Similarly, for the details of the "6 Weeks Course", I've used accordion styling. By default, only the first item is open, but users have the option to click and view other items. This approach keeps the page compact while still providing all necessary information.
                     </p>
                 </li>
-                <li class="lead text-muted">
-                    <span class="bold-title">Sub-nav</span>
+                <li class="text-muted">
+                    <span class="lead">Sub-nav</span>
                     <p>
                         For pages abundant in content, such as the index page—which features four articles on financial wellbeing before introducing the registration section—and the courses page, which starts with a featured six-week course encompassing three articles about the program before listing other courses, I've established a sub-navigation system. This enables users who are specifically interested in the second item or subsequent sections to jump to them quickly, enhancing the user experience.
                     </p>
@@ -155,16 +151,16 @@
         </section>
 
         <h3 class="mt-4 mb-3">Learning</h3>
-        <section class="mb=5">
+        <section class="outer-container mb-5">
             <ul>
-                <li class="lead text-muted">Firstly, I undertook this project for a real business owned by a friend who recently launched her venture. At the onset, the absence of a backend posed a challenge. However, I came across tools like "Form" that allow for input capture and automatically send her an email when a user submits information. I also integrated "Calendly" for booking introductory chats, allowing users to stay on the site rather than redirecting them to another platform. This integration was easier than I had anticipated. </li>
-                <li class="lead text-muted">Secondly, I deepened my understanding of Bootstrap. I consulted various YouTube tutorials and the official documentation. Specifically, features like carousels and accordions were straightforward to implement using Bootstrap. </li>
-                <li class="lead text-muted">Thirdly, I incorporated the use of handlebars. Given that my friend will need to update the website after I hand it over and she offers courses monthly, I streamlined the process for her. Instead of navigating a lengthy HTML document, she can simply update a JS file containing variables for upcoming group lesson dates, making it user-friendly.</li>
+                <li class="text-muted m-2 p-2">Firstly, I undertook this project for a real business owned by a friend who recently launched her venture. At the onset, the absence of a backend posed a challenge. However, I came across tools like "Form" that allow for input capture and automatically send her an email when a user submits information. I also integrated "Calendly" for booking introductory chats, allowing users to stay on the site rather than redirecting them to another platform. This integration was easier than I had anticipated. </li>
+                <li class="text-muted m-2 p-2">Secondly, I deepened my understanding of Bootstrap. I consulted various YouTube tutorials and the official documentation. Specifically, features like carousels and accordions were straightforward to implement using Bootstrap. </li>
+                <li class="text-muted m-2 p-2">Thirdly, I incorporated the use of handlebars. Given that my friend will need to update the website after I hand it over and she offers courses monthly, I streamlined the process for her. Instead of navigating a lengthy HTML document, she can simply update a JS file containing variables for upcoming group lesson dates, making it user-friendly.</li>
             </ul>
         </section>
         <h3 class="mt-4 mb-3">Evaluataion I</h3>
-        <section class="mb=5">
-            <p>
+        <section class="outer-container mb-5">
+            <p class="p-2 m-2 text-muted">
                 One of the highlights of this project is that it's designed for a genuine business. 
                 This ensured that the feedback I received from my friend was both serious and of high quality. 
                 She posed challenging questions, such as the possibility of integrating Calendly directly instead of using a simple redirection button. 
@@ -175,16 +171,16 @@
             </p>
         </section>  
         <h3 class="mt-4 mb-3">Evaluation II</h3>
-        <section class="mb=5">
+        <section class="outer-container mb-5">
             <ul>
-                <li class="lead text-muted">
-                    <span class="bold-title">Keyboard Navigation of Navbar and Footer</span>
+                <li class="text-muted">
+                    <span class="lead">Keyboard Navigation of Navbar and Footer</span>
                     <p>
                         While the WAVE tool did not highlight any errors, I encountered a navigation concern when using the ‘Tab’ key: the navbar items weren't correctly highlighted. This issue was initially prevalent with the &lt;a&gt; tags as well. To address it, I replaced these tags with &lt;button&gt; elements and incorporated event listeners to redirect to the respective links. While this workaround could be applied to the navbar, given the time constraints, I have decided to defer implementing this temporary solution. After submitting this assignment and before officially launching the website, I intend to delve deeper and address the root cause of this problem, which, at present, permits mouse click navigation but not keyboard input.
                     </p>
                 </li>
-                <li class="lead text-muted">
-                    <span class="bold-title">Lack of Clear Feedback on Form Submission</span>
+                <li class="text-muted">
+                    <span class="lead">Lack of Clear Feedback on Form Submission</span>
                     <p>
                         Providing feedback is crucial when users complete actions like subscribing to a newsletter or reserving a seat for a course. This assurance lets users know that their input has been registered and processed. For this purpose, I crafted a tailored feedback page, `formspree_reply.html`, which should ideally display post-submission as it's located in the same folder. However, the default Formspree confirmation page appears instead of my customized page. The latter is designed to convey a more personalized acknowledgment, such as, "Thank you. Should you not hear back from us within two business days, please reach out to xxx."
                     </p>
@@ -192,11 +188,12 @@
             </ul>
         </section>
         <h3 class="mt-4 mb-3">Resources:</h3>
-        <section>
-            <h4 class="mt-4 mb-3">Libraries:</h4>
+        <section class="outer-container mb-5">
+            <div class="inner-container">
+                <h4 class="mt-4 mb-3">Libraries:</h4>
                 <ul>
                     <!--Bootstrap-->
-                    <li>Bootstrap, 'Documentation', 2023. [Online]. Available:
+                    <li class="text-muted">Bootstrap, 'Documentation', 2023. [Online]. Available:
                         <ul>
                             <li>Layout
                                 <ul>
@@ -236,32 +233,36 @@
                         </ul>
                     </li>
                     <!--Font awesome-->
-                    <li>FontAwesome.com, 'Icons', 2023. [Online]. Available: <a href="https://fontawesome.com/">https://fontawesome.com/</a>. [Accessed: 11- Sep- 2023].</li>
+                    <li lass="text-muted">FontAwesome.com, 'Icons', 2023. [Online]. Available: <a href="https://fontawesome.com/">https://fontawesome.com/</a>. [Accessed: 11- Sep- 2023].</li>
                     <!--Handlebar-->
-                    <li>Handlebarsjs.com, 'Guide', 2023. [Online]. Available: <a href="https://handlebarsjs.com/guide/#what-is-handlebars">https://handlebarsjs.com/guide/</a>. [Accessed: 11- Sep- 2023].</li>
+                    <li lass="text-muted">Handlebarsjs.com, 'Guide', 2023. [Online]. Available: <a href="https://handlebarsjs.com/guide/#what-is-handlebars">https://handlebarsjs.com/guide/</a>. [Accessed: 11- Sep- 2023].</li>
                 </ul>
-            <h4 class="mt-4 mb-3">YouTube Videos</h4>
-            <ul>
-                <!-- Accordion -->
-                <li>Net Ninja, 'Bootstrap 5 Crash Course Tutorial #11 - Accordions', 2021. [Online]. Available: <a href="YouTube URL for Accordion Video">YouTube</a>. [Accessed: 11- Sep- 2023].</li>
-                
-                <!-- Card -->
-                <li>Net Ninja, 'Bootstrap 5 Crash Course Tutorial #10 - Cards', 2021. [Online]. Available: <a href="YouTube URL for Card Video">YouTube</a>. [Accessed: 11- Sep- 2023].</li>
-                
-                <!-- Icons -->
-                <li>Net Ninja, 'Bootstrap 5 Crash Course Tutorial #13 - Bootstrap Icons', 2021. [Online]. Available: <a href="YouTube URL for Icons Video">YouTube</a>. [Accessed: 11- Sep- 2023].</li>
-                
-                <!-- Navbar -->
-                <li>Adrian Twarog, 'Navbar Bootstrap 5 | Bootstrap Navbar Tutorial', 2021. [Online]. Available: <a href="YouTube URL for Navbar Video">YouTube</a>. [Accessed: 11- Sep- 2023].</li>
-                
-                <!-- Footer -->
-                <li>The Providers, 'Bootstrap 5 Footer | How to create Footer using Html and Bootstrap', 2020. [Online]. Available: <a href="https://www.youtube.com/watch?v=4fexoLuGpeI">YouTube</a>. [Accessed: 11- Sep- 2023].</li>
-            </ul>            
+            </div>
+            <div class="inner-container">
+                <h4 class="mt-4 mb-3">YouTube Videos</h4>
+                <ul>
+                    <!-- Accordion -->
+                    <li>Net Ninja, 'Bootstrap 5 Crash Course Tutorial #11 - Accordions', 2021. [Online]. Available: <a href="YouTube URL for Accordion Video">YouTube</a>. [Accessed: 11- Sep- 2023].</li>
+                    
+                    <!-- Card -->
+                    <li>Net Ninja, 'Bootstrap 5 Crash Course Tutorial #10 - Cards', 2021. [Online]. Available: <a href="YouTube URL for Card Video">YouTube</a>. [Accessed: 11- Sep- 2023].</li>
+                    
+                    <!-- Icons -->
+                    <li>Net Ninja, 'Bootstrap 5 Crash Course Tutorial #13 - Bootstrap Icons', 2021. [Online]. Available: <a href="YouTube URL for Icons Video">YouTube</a>. [Accessed: 11- Sep- 2023].</li>
+                    
+                    <!-- Navbar -->
+                    <li>Adrian Twarog, 'Navbar Bootstrap 5 | Bootstrap Navbar Tutorial', 2021. [Online]. Available: <a href="YouTube URL for Navbar Video">YouTube</a>. [Accessed: 11- Sep- 2023].</li>
+                    
+                    <!-- Footer -->
+                    <li>The Providers, 'Bootstrap 5 Footer | How to create Footer using Html and Bootstrap', 2020. [Online]. Available: <a href="https://www.youtube.com/watch?v=4fexoLuGpeI">YouTube</a>. [Accessed: 11- Sep- 2023].</li>
+                </ul>
+            </div>         
         </section>
         <h3 class="mt-4 mb-3">Appendices:</h3>
         <Section class="outer-container">
-            <h3>Sitemap</h3>
+            
             <div class="inner-container">
+                <h4>Sitemap</h4>
                 <ol>
                     <li>Home
                         <ul>
@@ -269,118 +270,128 @@
                             <li>1-b: Call to Action – what can I do to take next action?</li>
                         </ul>
                     </li>
-                    <li>2: Our Story
+                    <li>Our Story
                         <ul>
-                            <li>2-a: Dream Home (My client’s own narrative)</li>
-                            <li>2-b: Meet your Coach, Minna (Client’s profile)</li>
-                            <li>2-c: Book free intro chat</li>
+                            <li>Dream Home (My client’s own narrative)</li>
+                            <li>Meet your Coach, Minna (Client’s profile)</li>
+                            <li>Book free intro chat</li>
                         </ul>
                     </li>
-                    <li>3: Resources
+                    <li>Resources
                         <ul>
-                            <li>3-a: Books</li>
-                            <li>3-b: Podcasts</li>
-                            <li>3-c: Websites</li>
+                            <li>Books</li>
+                            <li>Podcasts</li>
+                            <li>Websites</li>
                         </ul>
                     </li>
-                    <li>4: Instagram (News Letter)
+                    <li>Instagram (News Letter)
                         <ul>
-                            <li>4-a: Most Popular</li>
-                            <li>4-b: Archives – search by topic</li>
+                            <li>Most Popular</li>
+                            <li>Archives – search by topic</li>
                         </ul>
                     </li>
-                    <li>5: Courses
+                    <li>Courses
                         <ul>
-                            <li>5-a: 6 weeks course</li>
-                            <li>5-b: All courses</li>
+                            <li>6 weeks course</li>
+                            <li>All courses</li>
                         </ul>
                     </li>
                 </ol>
             </div>
 
-            <h3>Wireframe</h3>
+            
             <div class="inner-container">
-                
+                <h4>Wireframe</h4>
+                <div>
+                    <h5>Latest Version</h5>
+                    <ol>
+                        <li>Home: <a href="Wire_Frame/Version3/mobile_home.jpg">Mobile View</a> & <a href="Wire_frame/Version3/web_home.jpg">Web View</a></li>
+                        <li>Our Story:<a href="Wire_Frame/Version3/mobile_h.jpg">Mobile View</a> & <a href="Wire_frame/Version3/web_home.jpg">Web View</a></li></li>
+                    </ol>
+                </div>
+
+                <article>
+                    <h4>Structure of the website - Version 1</h4>
+                    <ol>
+                        <li class="lead text-muted">
+                            <span class="bold-title">Index Page</span>
+                            <p>
+                                The key for the index page is to prominently display the action button ("Book the First Free Session") without seeming too pushy. Using the "Invest Like Aysha" page's two action buttons as an example; while the first button felt a bit over the top, the second one was aptly placed to suggest a free class. The page will kick off with a welcome message elucidating the importance of investing. The persuasive use of statistics on Corine Brecher's page, such as the percentage of women investing, was noteworthy. We will incorporate several testimonials, and a carousel layout will keep the page length in check. A brief introduction to "About Me" and "Service" (essentially, reasons to choose this service) will be provided, with the details being relegated to dedicated pages.
+                            </p>
+                        </li>
+                        <li class="lead text-muted">
+                            <span class="bold-title">About Me</span>
+                            <p>
+                                It's crucial to strike a balance using images and icons, ensuring the presentation remains sleek without appearing cluttered. IWT's webpage employed an intriguing tactic by showcasing photos that capture genuine moments (like sharing smiles with clients or working diligently at a desk) which made the portrayal authentic and appealing. Integrating a YouTube video, reminiscent of what Corine Brecher executed, could engage customers who might not be keen on reading.
+                            </p>
+                        </li>
+                        <li class="lead text-muted">
+                            <span class="bold-title">6-Week Course</span>
+                            <p>
+                                Our design will make it visually evident that we are outlining the specifics of five modules via a grid layout. Features like sub-navigation that delves into the nuances of details, tools, and pricing will be presented in an accordion style.
+                            </p>
+                        </li>
+                        <li class="lead text-muted">
+                            <span class="bold-title">Newsletter / Blog</span>
+                            <p>
+                                It would be advantageous to compartmentalize topics under sub-categories such as retirement plans and market fundamentals, and to consider re-purposing content from existing Instagram posts.
+                            </p>
+                        </li>
+                        <li class="lead text-muted">
+                            <span class="bold-title">Free Initial Call</span>
+                            <p>
+                                Instead of adhering to the generic "Contact Us" page, we can craft a tab exclusively dedicated to a free initial call, accentuated with its specifics and a clear call-to-action button. This nuanced approach can easily replace the traditional "Contact Us" page, wherein we can allocate the email contact in the footer.
+                            </p>
+                        </li>
+                    </ol>
+                </article>                        
+                <article>
+                    <h4>Structure of the website - Version 2</h4>
+                    <ol>
+                        <li class="lead text-muted">
+                            <span class="bold-title">First Page (Home)</span>
+                            <p>
+                                The initial page will greet visitors with a compelling message about the importance of investing, emphasizing the essence of financial well-being. This narrative also shares the financial coach's personal journey, particularly her realization of the importance of investment during her quest with her husband to buy their dream abode. Furthermore, several testimonials from satisfied clients will be showcased in a carousel format to keep the page concise. Action buttons, such as "Subscribe to Newsletter" and "Book the First Free Session", will be positioned strategically at the page's conclusion, ensuring it doesn't come off as overly aggressive.
+                            </p>
+                        </li>
+                        <li class="lead text-muted">
+                            <span class="bold-title">Second Page (Course)</span>
+                            <p>
+                                This section delves deeper into the courses tailored for enhancing women's financial management skills. It spotlights a 6-week course split into five detailed sessions, explaining the learning outcomes and setting expectations. A clear visual representation will highlight the five course modules using a grid layout. An accordion design is incorporated for in-depth information to ensure the amount of information doesn't appear overwhelming, while providing detailed information for those interested.
+                            </p>
+                        </li>
+                        <li class="lead text-muted">
+                            <span class="bold-title">Third Page (Resource)</span>
+                            <p>
+                                Catering to those who might prefer not to take the courses at least for now, this page offers an array of resources, from books to podcasts, bolstering independent financial management knowledge. Each resource is neatly encapsulated within a Bootstrap card design, with convenient links directing to platforms like Apple Podcasts, Spotify for podcasts, and Amazon for books.
+                            </p>
+                        </li>
+                        <li class="lead text-muted">
+                            <span class="bold-title">Fourth Page (Newsletter)</span>
+                            <p>
+                                This segment is exclusively dedicated to the newsletter. The financial coach offers daily insights, nudging women to be continually aware of their financial well-being. Recognizing a preference for audio/visual contents over text, several posts offer video messages supplemented by detailed articles. For enhanced user experience, popular posts are equipped with video playback options. Furthermore, posts are chronologically arranged, with the freshest content up top, complemented by a topic-based filter system like "investing," "well-being," "mission," and "collaboration." Upon clicking the "read more" button, users can see the details on the financial coach’s Instagram page.
+                            </p>
+                        </li>
+                        <li class="lead text-muted">
+                            <span class="bold-title">Fifth Page (Call to Action)</span>
+                            <p>
+                                After comprehending financial well-being's gravity and juxtaposing the two learning pathways (self-study vs. supported learning), and being further inspired by information from contents found in the resource and newsletter sections, users can make one of three informed decisions:
+                            </p>
+                            <ul>
+                                <li>Subscribe to the newsletter.</li>
+                                <li>Engage in a free introductory chat with the coach.</li>
+                                <li>Secure a spot for the course.</li>
+                            </ul>
+                            <p>
+                                For subscribing and reserving a seat for the course, the website uses Formly. So when a user hits submit, the financial coach will receive an email. Similarly, for booking an introductory chat, the website integrates with the Calendly service to supplement our webpage’s lack of backend.
+                            </p>
+                        </li>
+                    </ol>
+                </article>
+
             </div>
             <p>We have 3 versions of wireframes</p>
-            <article>
-                <h4>Structure of the website - Version 1</h4>
-                <ol>
-                    <li class="lead text-muted">
-                        <span class="bold-title">Index Page</span>
-                        <p>
-                            The key for the index page is to prominently display the action button ("Book the First Free Session") without seeming too pushy. Using the "Invest Like Aysha" page's two action buttons as an example; while the first button felt a bit over the top, the second one was aptly placed to suggest a free class. The page will kick off with a welcome message elucidating the importance of investing. The persuasive use of statistics on Corine Brecher's page, such as the percentage of women investing, was noteworthy. We will incorporate several testimonials, and a carousel layout will keep the page length in check. A brief introduction to "About Me" and "Service" (essentially, reasons to choose this service) will be provided, with the details being relegated to dedicated pages.
-                        </p>
-                    </li>
-                    <li class="lead text-muted">
-                        <span class="bold-title">About Me</span>
-                        <p>
-                            It's crucial to strike a balance using images and icons, ensuring the presentation remains sleek without appearing cluttered. IWT's webpage employed an intriguing tactic by showcasing photos that capture genuine moments (like sharing smiles with clients or working diligently at a desk) which made the portrayal authentic and appealing. Integrating a YouTube video, reminiscent of what Corine Brecher executed, could engage customers who might not be keen on reading.
-                        </p>
-                    </li>
-                    <li class="lead text-muted">
-                        <span class="bold-title">6-Week Course</span>
-                        <p>
-                            Our design will make it visually evident that we are outlining the specifics of five modules via a grid layout. Features like sub-navigation that delves into the nuances of details, tools, and pricing will be presented in an accordion style.
-                        </p>
-                    </li>
-                    <li class="lead text-muted">
-                        <span class="bold-title">Newsletter / Blog</span>
-                        <p>
-                            It would be advantageous to compartmentalize topics under sub-categories such as retirement plans and market fundamentals, and to consider re-purposing content from existing Instagram posts.
-                        </p>
-                    </li>
-                    <li class="lead text-muted">
-                        <span class="bold-title">Free Initial Call</span>
-                        <p>
-                            Instead of adhering to the generic "Contact Us" page, we can craft a tab exclusively dedicated to a free initial call, accentuated with its specifics and a clear call-to-action button. This nuanced approach can easily replace the traditional "Contact Us" page, wherein we can allocate the email contact in the footer.
-                        </p>
-                    </li>
-                </ol>
-            </article>                        
-            <article>
-                <h4>Structure of the website - Version 2</h4>
-                <ol>
-                    <li class="lead text-muted">
-                        <span class="bold-title">First Page (Home)</span>
-                        <p>
-                            The initial page will greet visitors with a compelling message about the importance of investing, emphasizing the essence of financial well-being. This narrative also shares the financial coach's personal journey, particularly her realization of the importance of investment during her quest with her husband to buy their dream abode. Furthermore, several testimonials from satisfied clients will be showcased in a carousel format to keep the page concise. Action buttons, such as "Subscribe to Newsletter" and "Book the First Free Session", will be positioned strategically at the page's conclusion, ensuring it doesn't come off as overly aggressive.
-                        </p>
-                    </li>
-                    <li class="lead text-muted">
-                        <span class="bold-title">Second Page (Course)</span>
-                        <p>
-                            This section delves deeper into the courses tailored for enhancing women's financial management skills. It spotlights a 6-week course split into five detailed sessions, explaining the learning outcomes and setting expectations. A clear visual representation will highlight the five course modules using a grid layout. An accordion design is incorporated for in-depth information to ensure the amount of information doesn't appear overwhelming, while providing detailed information for those interested.
-                        </p>
-                    </li>
-                    <li class="lead text-muted">
-                        <span class="bold-title">Third Page (Resource)</span>
-                        <p>
-                            Catering to those who might prefer not to take the courses at least for now, this page offers an array of resources, from books to podcasts, bolstering independent financial management knowledge. Each resource is neatly encapsulated within a Bootstrap card design, with convenient links directing to platforms like Apple Podcasts, Spotify for podcasts, and Amazon for books.
-                        </p>
-                    </li>
-                    <li class="lead text-muted">
-                        <span class="bold-title">Fourth Page (Newsletter)</span>
-                        <p>
-                            This segment is exclusively dedicated to the newsletter. The financial coach offers daily insights, nudging women to be continually aware of their financial well-being. Recognizing a preference for audio/visual contents over text, several posts offer video messages supplemented by detailed articles. For enhanced user experience, popular posts are equipped with video playback options. Furthermore, posts are chronologically arranged, with the freshest content up top, complemented by a topic-based filter system like "investing," "well-being," "mission," and "collaboration." Upon clicking the "read more" button, users can see the details on the financial coach’s Instagram page.
-                        </p>
-                    </li>
-                    <li class="lead text-muted">
-                        <span class="bold-title">Fifth Page (Call to Action)</span>
-                        <p>
-                            After comprehending financial well-being's gravity and juxtaposing the two learning pathways (self-study vs. supported learning), and being further inspired by information from contents found in the resource and newsletter sections, users can make one of three informed decisions:
-                        </p>
-                        <ul>
-                            <li>Subscribe to the newsletter.</li>
-                            <li>Engage in a free introductory chat with the coach.</li>
-                            <li>Secure a spot for the course.</li>
-                        </ul>
-                        <p>
-                            For subscribing and reserving a seat for the course, the website uses Formly. So when a user hits submit, the financial coach will receive an email. Similarly, for booking an introductory chat, the website integrates with the Calendly service to supplement our webpage’s lack of backend.
-                        </p>
-                    </li>
-                </ol>
-            </article>
+            
         </Section>
 
 
