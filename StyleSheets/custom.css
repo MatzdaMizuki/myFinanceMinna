@@ -91,7 +91,12 @@ h3 {
 .figure-container {
     padding: 10px; 
 }
-
+.text-container {
+    padding: 20px; /* slightly larger padding for mobile */
+    background-color: #f8f9fa; /* equivalent to bg-light */
+    border-radius: .25rem; /* equivalent to rounded */
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); /* equivalent to shadow */
+}
 /* Styles for screens 992px and above (laptop and larger screens) */
 @media (min-width: 992px) {
     .outer-container {
@@ -99,10 +104,10 @@ h3 {
     }
 
     .inner-container {
-        margin: 0 15px;
+        margin: 15px;
     }
 
-    .figure-container {
+    .figure-container,.text-container {
         padding: 20px;
     }
 }
