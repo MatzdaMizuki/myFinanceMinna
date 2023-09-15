@@ -2,6 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+/*stying for logo next to nav bar*/
+.btn-transparent {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 3px;
+    margin: 3px;
+    color: white; /* Setting the text color to white */
+    font: 16px;
+}
+
+.btn-transparent:hover, .btn-transparent:focus {
+    background: transparent;
+    color: white; /* Ensure text remains white on hover/focus */
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+
 /* Styles the main header image on our website, ensuring it fits well, is centered, and has visible accompanying text. */
 .masthead {
     background-size: cover;
