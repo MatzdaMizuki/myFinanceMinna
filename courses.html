@@ -18,13 +18,11 @@
         <!-- Start of Navigation bar -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
-                
                 <!-- Brand Logo and Name -->
-                <a href="index.html" class="navbar-brand mb-0 h1">
+                <button onclick="redirectTo('index.html')" class="navbar-brand mb-0 h1 btn-transparent">
                     <img class="d-inline-block align-top" src="Images/index/favicon.png" alt="logo for My Finance Mina with cactus" width="30" height="30" />
                     My Finance Minna
-                </a>
-                
+                </button>                
                 <!-- Mobile Toggle Button -->
                 <button 
                     type="button"
@@ -41,52 +39,41 @@
                 <!-- Navigation Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        
                         <!-- Home Dropdown -->
                         <li class="nav-item dropdown">
-                            <a href="index.html" class="nav-link dropdown-toggle"
-                            id="navbarDroppdownHome" role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            >
+                            <button onclick="redirectTo('index.html')" class="nav-link dropdown-toggle" id="navbarDroppdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Home
-                            </a>
+                            </button>
                             <ul class="dropdown-menu" aria-labelledby="navbarDroppdownHome">
-                                <li><a href="index.html" class="dropdown-item">Home</a></li>
-                                <li><a href="index.html#register" class="dropdown-item">Register</a></li>
+                                <li><button onclick="redirectTo('index.html')" class="dropdown-item">Home</button></li>
+                                <li><button onclick="redirectTo('index.html#register')" class="dropdown-item">Register</button></li>
                             </ul>
                         </li>
                         
                         <!-- Other Nav Links -->
                         <li class="nav-item">
-                            <a href="our_story.html" class="nav-link">Our Story</a>
+                            <button onclick="redirectTo('our_story.html')" class="nav-link">Our Story</button>
                         </li>
                         <li class="nav-item">
-                            <a href="resource.html" class="nav-link">Resource</a>
+                            <button onclick="redirectTo('resource.html')" class="nav-link">Resource</button>
                         </li>
                         <li class="nav-item">
-                            <a href="newsletter.html" class="nav-link">Instagram</a>
+                            <button onclick="redirectTo('newsletter.html')" class="nav-link">Instagram</button>
                         </li>
-                        
                         <!-- Courses Dropdown -->
                         <li class="nav-item dropdown">
-                            <a href="courses.html" class="nav-link dropdown-toggle active"
-                            id="navbarDroppdownCourses" role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            aria-current="page">
+                            <button onclick="redirectTo('courses.html')" class="nav-link dropdown-toggle  active" id="navbarDroppdownCourses" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
                                 Courses
-                            </a>
+                            </button>
                             <ul class="dropdown-menu" aria-labelledby="navbarDroppdownCourses">
-                                <li><a href="courses.html" class="dropdown-item">6 weeks course</a></li>
-                                <li><a href="courses.html#all_courses" class="dropdown-item">All courses</a></li>
+                                <li><button onclick="redirectTo('courses.html')" class="dropdown-item">6 weeks course</button></li>
+                                <li><button onclick="redirectTo('courses.html#all_courses')" class="dropdown-item">All courses</button></li>
                             </ul>
                         </li>
-                        
                     </ul> <!-- End of navbar-nav -->
                 </div> <!-- End of navbar-collapse -->
             </div> <!-- End of container -->
-        </nav> <!-- End of Navigation bar -->   
+        </nav> <!-- End of Navigation bar -->
         <!--header image-->
         <div
             class="masthead"
@@ -460,7 +447,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <!-- Custom script for courses functionality -->
     <script src="courses.js"></script>
-    <!--handlebar JS-->
+    <!--handlebar JS. It updates the logistics section (accordion style, first item)-->
     <script id="course-template" type="text/x-handlebars-template">
         <p>
             <ul>
@@ -471,7 +458,7 @@
             <!-- Table header -->
             <thead>
                 <tr>
-                    <th>Session</th> <!-- Added title here -->
+                    <th>Group Session</th> 
                     <th>Option 1</th>
                     <th>Option 2</th>
                 </tr>
@@ -491,6 +478,11 @@
                 </tr>
             </tbody>
         </table>
+    </script>
+    <script>
+        function redirectTo(url) {
+            window.open(url, '_blank');
+        }
     </script>
     
     <!-- Footer section with additional links and copyright notice -->
