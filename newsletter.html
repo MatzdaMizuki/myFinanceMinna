@@ -15,16 +15,13 @@
 </head>
   <body>
     <header>
-        <!-- Start of Navigation bar -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
-                
                 <!-- Brand Logo and Name -->
-                <a href="index.html" class="navbar-brand mb-0 h1">
+                <button onclick="redirectTo('index.html')" class="navbar-brand mb-0 h1 btn-transparent">
                     <img class="d-inline-block align-top" src="Images/index/favicon.png" alt="logo for My Finance Mina with cactus" width="30" height="30" />
                     My Finance Minna
-                </a>
-                
+                </button>                
                 <!-- Mobile Toggle Button -->
                 <button 
                     type="button"
@@ -41,50 +38,48 @@
                 <!-- Navigation Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        
                         <!-- Home Dropdown -->
                         <li class="nav-item dropdown">
-                            <a href="index.html" class="nav-link dropdown-toggle"
+                            <button onclick="redirectTo('index.html')" class="nav-link dropdown-toggle"
                             id="navbarDroppdownHome" role="button"
                             data-bs-toggle="dropdown"
                             aria-expanded="false">
                                 Home
-                            </a>
+                            </button>
                             <ul class="dropdown-menu" aria-labelledby="navbarDroppdownHome">
-                                <li><a href="index.html" class="dropdown-item">Home</a></li>
-                                <li><a href="index.html#register" class="dropdown-item">Register</a></li>
+                                <li><button onclick="redirectTo('index.html')" class="dropdown-item">Home</button></li>
+                                <li><button onclick="redirectTo('index.html#register')" class="dropdown-item">Register</button></li>
                             </ul>
                         </li>
                         
                         <!-- Other Nav Links -->
                         <li class="nav-item">
-                            <a href="our_story.html" class="nav-link">Our Story</a>
+                            <button onclick="redirectTo('our_story.html')" class="nav-link">Our Story</button>
                         </li>
                         <li class="nav-item">
-                            <a href="resource.html" class="nav-link" aria-current="page">Resource</a>
+                            <button onclick="redirectTo('resource.html')" class="nav-link">Resource</button>
                         </li>
                         <li class="nav-item">
-                            <a href="newsletter.html" class="nav-link active" aria-current="page">Instagram</a>
+                            <button onclick="redirectTo('newsletter.html')" class="nav-link active" aria-current="page">Instagram</button>
                         </li>
-                        
                         <!-- Courses Dropdown -->
                         <li class="nav-item dropdown">
-                            <a href="courses.html" class="nav-link dropdown-toggle"
+                            <button onclick="redirectTo('courses.html')" class="nav-link dropdown-toggle"
                             id="navbarDroppdownCourses" role="button"
                             data-bs-toggle="dropdown"
                             aria-expanded="false">
                                 Courses
-                            </a>
+                            </button>
                             <ul class="dropdown-menu" aria-labelledby="navbarDroppdownCourses">
-                                <li><a href="courses.html" class="dropdown-item">6 weeks course</a></li>
-                                <li><a href="courses.html#all_courses" class="dropdown-item">All courses</a></li>
+                                <li><button onclick="redirectTo('courses.html')" class="dropdown-item">6 weeks course</button></li>
+                                <li><button onclick="redirectTo('courses.html#all_courses')" class="dropdown-item">All courses</button></li>
                             </ul>
                         </li>
-                        
                     </ul> <!-- End of navbar-nav -->
                 </div> <!-- End of navbar-collapse -->
             </div> <!-- End of container -->
         </nav> <!-- End of Navigation bar -->
+        
         <!--header image-->
         <div
             class="masthead"
@@ -184,6 +179,11 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="articles.js"></script>
     <script src="push_articles.js"></script>
+    <script>
+        function redirectTo(url) {
+            window.open(url, '_blank');
+        }
+    </script>
     <!-- Footer section with additional links and copyright notice -->
     <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container text-center text-md-left">
