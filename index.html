@@ -25,12 +25,7 @@
                 </button>                
                 <!-- Mobile Toggle Button -->
                 <button 
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    class="navbar-toggler"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
@@ -258,54 +253,73 @@
         }
     </script>
      <!-- Footer section with additional links and copyright notice -->
-    <footer class="bg-dark text-white pt-5 pb-4">
-        <div class="container text-center text-md-left">
-            <div class="row text-center text-md-left">
-                <!-- Various sections in the footer with relevant links -->
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">About</h5>
-                    <p><button onclick="redirectTo('courses.html')" class="btn-transparent text-white" style="background:none; border:none;">Courses</button></p>
-                    <p><button onclick="redirectTo('our_story.html')" class="btn-transparent text-white" style="background:none; border:none;">About Minna</button></p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Register</h5>
-                    <p><button onclick="redirectTo('our_story.html#intro_call')" class="btn-transparent text-white" style="background:none; border:none;">Schedule Free Intro Chat</button></p>
-                    <p><button onclick="redirectTo('courses.html')" class="btn-transparent text-white" style="background:none; border:none;">Reserve seat for Courses</button></p>
-                </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Legal Stuff</h5>
-                    <p><button onclick="redirectTo('terms_and_conditions.html')" class="btn-transparent text-white" style="background:none; border:none;">Terms & Conditions</button></p>
-                    <p><button onclick="redirectTo('privacy_policy.html')" class="btn-transparent text-white" style="background:none; border:none;">Privacy Policy</button></p>
-                    <p><button onclick="redirectTo('report.html')" class="btn-transparent text-white" style="background:none; border:none;">Report</button></p>
-                </div>
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Contact</h5>
-                    <p><i class="fas fa-envelope mr-3"></i>minna.schmidt@outlook.com</p>
-                </div>
+    <!-- Footer section with additional links and copyright notice -->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+            <!-- Various sections in the footer with relevant links -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">About</h5>
+                <p>
+                    <button onclick="redirectTo('courses.html')" class="btn btn-link text-white text-decoration-none p-0">Courses</button>
+                </p>
+                <p>
+                    <button onclick="redirectTo('our_story.html')" class="btn btn-link text-white text-decoration-none p-0">About Minna</button>
+                </p>
             </div>
-            <hr class="mb-4">
-            <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-md-7 col-lg-7 m-3">
-                    <p>© Copyright 2023 All rights reserved by My Finance Minna</p>
-                </div>
-                <div class="col-md-5 col-lg-4 m-3">
-                    <!-- Social media links -->
-                    <div class="text-md-right">
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/minnaschmidt/" class="btn-floating btn-sm text-white" style="font-size: 23px;" aria-label="LinkedIn profile for Minna Schmidt">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.instagram.com/minnaschmidt/" class="btn-floating btn-sm text-white" style="font-size: 23px;" aria-label="Instagram profile for Minna Schmidt">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Register</h5>
+                <p>
+                    <button onclick="redirectTo('our_story.html#intro_call')" class="btn btn-link text-white text-decoration-none p-0">Schedule Free Intro Chat</button>
+                </p>
+                <p>
+                    <button onclick="redirectTo('courses.html')" class="btn btn-link text-white text-decoration-none p-0">Reserve seat for Courses</button>
+                </p>
             </div>
-        </footer>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Legal Stuff</h5>
+                <p>
+                    <button onclick="redirectTo('terms_and_conditions.html')" class="btn btn-link text-white text-decoration-none p-0">Terms & Conditions</button>
+                </p>
+                <p>
+                    <button onclick="redirectTo('privacy_policy.html')" class="btn btn-link text-white text-decoration-none p-0">Privacy Policy</button>
+                </p>
+                <p>
+                    <button onclick="redirectTo('report.html')" class="btn btn-link text-white text-decoration-none p-0">Report</button>
+                </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Contact</h5>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i>minna.schmidt@outlook.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="mb-4">
+    <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-md-7 col-lg-7 m-3">
+            <p>© Copyright 2023 All rights reserved by My Finance Minna</p>
+        </div> 
+        <div class="col-md-5 col-lg-4 m-3">
+            <!-- Social media links -->
+            <div class="text-md-right">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/minnaschmidt/" class="btn-floating btn-sm text-white" style="font-size: 23px;" aria-label="LinkedIn profile for Minna Schmidt">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/minnaschmidt/" class="btn-floating btn-sm text-white" style="font-size: 23px;" aria-label="Instagram profile for Minna Schmidt">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>                        
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

@@ -294,3 +294,19 @@ div.p-3 a:hover {
 .text-custom-green {
     color: rgb(159, 244, 223) !important;
 }
+/* When Footer is highlighted, to check visual accessibility, footer change styling when focus*/
+.footer-button:focus {
+    outline: 2px solid #00FF00; /* This will give a bright green outline */
+    background-color: rgba(0, 255, 0, 0.1); /* This will give a slight green tint as a background */
+}
+/*change to slightly lighter color when hover*/
+.footer-button {
+    background-color: #343a40; /* Bootstrap's bg-dark color */
+    color: white; /* Text color */
+    border: none; /* Remove default button borders */
+}
+
+.footer-button:hover,
+.footer-button:focus {
+    background-color: #2d3236; /* Slightly lighter than bg-dark */
+}
