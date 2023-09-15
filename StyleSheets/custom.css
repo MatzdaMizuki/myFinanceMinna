@@ -75,6 +75,39 @@ h3 {
     margin-bottom: 10px;
 }
 
+/*outer-container, inner-container and figure-container mainly controls spacing (padding & margin)*/
+/* Mobile styles (default) */
+.outer-container {
+    border: 2px solid rgba(218, 223, 222, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.inner-container {
+    margin: 0 5px; 
+}
+
+.figure-container {
+    padding: 10px; 
+}
+
+/* Styles for screens 992px and above (laptop and larger screens) */
+@media (min-width: 992px) {
+    .outer-container {
+        padding: 20px;
+    }
+
+    .inner-container {
+        margin: 0 15px;
+    }
+
+    .figure-container {
+        padding: 20px;
+    }
+}
+
+
 /* Ensures content flows naturally and doesn't overlap. */
 .clearfix::after {
     content: "";
@@ -199,15 +232,7 @@ div.p-3 a:hover {
 }
 
 /* Styles the containers and quotes on our 'Contact Us' & 'Dream Home' pages, ensuring a neat and attractive layout. */
-.outer-container {
-    border: 2px solid rgba(218, 223, 222, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-.inner-container {
-    margin: 0 15px;
-}
+
 .quote-container {
     position: relative;
     overflow: hidden;
