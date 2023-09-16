@@ -3,13 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="description" content="My Finance Minna">
     <title>My Finance Minna</title>
+    <!--Various links for external sources-->
+    <!-- Bootstrap: A styling framework that makes our website look good and responsive. -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Font Awesome: A collection of icons that can be used throughout the site. -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Bootstrap Icons: A set of icons specifically designed to complement the Bootstrap styling framework. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS: Specific styles that are unique to our website. -->
     <link rel="stylesheet" href="StyleSheets/custom.css">
+
+    <!-- Favicon: A small icon that appears on the browser tab, representing our website. -->
     <link rel="icon" href="Images/common/favicon.jpg"> 
+
+    <!-- Handlebars: A tool to dynamically generate HTML content for our website. -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
 
 </head>
@@ -408,36 +420,69 @@
         </section> 
         <div class="container outer-container">
             <!-- Section for reserving a seat in a course -->
-            <section id="reserve_course">  
-                <h2 class="p-5">Reserve a seat for the course</h2>
-                <div class="row inner-container">
-                    <div class="col-12 col-lg-6 order-2 order-lg-1 p-5 bg-light rounded shadow">
-                        <form action="https://formspree.io/f/mleybdda?next=formspree_reply.html" method="POST">
-                            <div class="input-group p-5">
-                                <label for="name_course" class="form-label">Name:</label>
-                                <input type="text" id="name_course" name="name_course" class="form-control">
-                            </div>
-                            <div class="input-group p-5">
-                                <label for="email_course" class="form-label">Email:</label>
-                                <input type="email" id="email_course" name="email_course" class="form-control">
-                            </div>
-                            <div class="input-group p-5">
-                                <label for="course_selection" class="form-label">Course:</label>
-                                <select id="course_selection" name="course_selection" class="form-control" required>
-                                    <option value="">--Please choose--</option>
-                                    <option value="6_weeks_course_selection">6 Weeks Course</option>
-                                    <option value="individual_coaching">Individual Financial Coaching</option>
-                                    <option value="couples_financial_planning">Couple's Financial Planning</option>
-                                    <option value="b2b_coaching">B2B Coaching for Women at Work</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn custom-btn btn-lg m-3">Reserve a seat</button>
-                        </form>                                                                                    
+            <!-- Resource: Yourube: Net Ninja, 2022, "Bootstrap 5 Crash Course Tutorial #14 - Working with Forms" -->
+            <!-- Link: https://www.youtube.com/watch?v=dKVX22GR7zQ (assessed 2023-09-16)-->
+            <section id="reserve_course">
+                <div class="container-lg">
+                    <div class="text-center">
+                        <h2>Reserve a seat for the course</h2>
+                        <p class="lead">Courses that take your finances to the next level</p>
                     </div>
-                    <figure class="col-12 col-lg-6 order-1 order-lg-2 p-5">
-                        <img src="Images/courses/cactus2.jpg" alt="woman stretching arm in nature" class="img-fluid custom-image-height">
-                    </figure>
-                </div> 
+                    
+                    <div class="row justify-content-center my-5">
+                        <div class="col-lg-6">
+                            <form action="https://formspree.io/f/mleybdda?next=formspree_reply.html" method="POST">
+                                <!--Name -->
+                                <label for="name_course" class="form-label">Name:</label>
+                                <div class="mb-4 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-person-fill"></i>
+                                    </span>
+                                    <input type="text" id="name_course" placeholder="e.g. Anne" class="form-control" >
+                                </div>
+                                <!--Email-->
+                                <label for="email_course" class="form-label">Email address:</label>
+                                <div class="mb-4 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </span>
+                                    <input type="email" class="form-control" id="email_course" placeholder="e.g. anne@example.com">
+                                </div>
+                                
+                          
+                               
+                                <!-- Course Selection -->
+                                <label for="course_selection" class="form-label">Please choose the course</label>
+                                <div class="input-group mb-4">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-book-fill"></i>
+                                    </span>
+                                    <select class="form-select" id="course_selection">
+                                        <option value="">--Please choose--</option>
+                                        <option value="6_weeks_course_selection" selected>6 Weeks Course</option>
+                                        <option value="individual_coaching">Individual Financial Coaching</option>
+                                        <option value="couples_financial_planning">Couple's Financial Planning</option>
+                                        <option value="b2b_coaching">B2B Coaching for Women at Work</option>
+                                    </select>
+
+                                </div>
+                                
+                                <div class="form-floating mb-4 mt-5">
+                                    <textarea id="query" class="form-control" style="height: 140px"></textarea>
+                                        <label for="query">Any question, please ask</label>
+                                </div>
+                                <!--Submit Button-->
+                                <div class="mb-4 mt3 text-center">
+                                    <button type="submit" class="btn custom-btn">Reserve a seat</button>
+                                </div>
+                               
+                                
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
             </section>
             
         </div>
