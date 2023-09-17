@@ -34,13 +34,19 @@
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
                 <!-- Brand Logo and Name -->
-                <button onclick="redirectTo('index.html')" class="navbar-brand mb-0 h1 btn-transparent">
+                <a href="index.html" class="navbar-brand mb-0 h1">
                     <img class="d-inline-block align-top" src="Images/index/favicon.png" alt="logo for My Finance Mina with cactus" width="30" height="30" />
                     My Finance Minna
-                </button>                
+                </a>
+                
                 <!-- Mobile Toggle Button -->
                 <button 
-                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    class="navbar-toggler"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
@@ -51,40 +57,40 @@
                     <ul class="navbar-nav">
                         <!-- Home Dropdown -->
                         <li class="nav-item dropdown">
-                            <button onclick="redirectTo('index.html')" class="nav-link dropdown-toggle active" id="navbarDroppdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                            <a href="index.html" class="nav-link dropdown-toggle"
+                            id="navbarDroppdownHome" role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
                                 Home
-                            </button>
+                            </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDroppdownHome">
-                                <li><button onclick="redirectTo('index.html')" class="dropdown-item">Home</button></li>
-                                <li><button onclick="redirectTo('index.html#register')" class="dropdown-item">Register</button></li>
+                                <li><a href="index.html" class="dropdown-item">Home</a></li>
+                                <li><a href="index.html#register" class="dropdown-item">Register</a></li>
                             </ul>
                         </li>
                         
                         <!-- Other Nav Links -->
                         <li class="nav-item">
-                            <button onclick="redirectTo('our_story.html')" class="nav-link">Our Story</button>
+                            <a href="our_story.html" class="nav-link">Our Story</a>
                         </li>
                         <li class="nav-item">
-                            <button onclick="redirectTo('resource.html')" class="nav-link">Resource</button>
+                            <a href="resource.html" class="nav-link active" aria-current="page">Resource</a>
                         </li>
                         <li class="nav-item">
-                            <button onclick="redirectTo('newsletter.html')" class="nav-link">Instagram</button>
+                            <a href="newsletter.html" class="nav-link">Instagram</a>
                         </li>
                         <!-- Courses Dropdown -->
                         <li class="nav-item dropdown">
-                            <button onclick="redirectTo('courses.html')" class="nav-link dropdown-toggle"
+                            <a href="courses.html" class="nav-link dropdown-toggle"
                             id="navbarDroppdownCourses" role="button"
                             data-bs-toggle="dropdown"
                             aria-expanded="false">
                                 Courses
-                            </button>
+                            </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDroppdownCourses">
-                                <li><button onclick="redirectTo('courses.html')" class="dropdown-item">6 weeks course</button></li>
-                                <li><button onclick="redirectTo('courses.html#all_courses')" class="dropdown-item">All courses</button></li>
+                                <li><a href="courses.html" class="dropdown-item">6 weeks course</a></li>
+                                <li><a href="courses.html#all_courses" class="dropdown-item">All courses</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <button onclick="redirectTo('report.html')" class="nav-link">Report</button>
                         </li>
                     </ul> <!-- End of navbar-nav -->
                 </div> <!-- End of navbar-collapse -->
