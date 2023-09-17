@@ -109,7 +109,18 @@ h3 {
 }
 
 .figure-container {
-    padding: 10px; 
+    align-items: flex-start; /* aligns items to the top */
+    height: auto; /* prevents stretching */
+}
+
+.figure-container figure {
+    margin: 0; /* removes any default margins */
+}
+
+.figure-container img {
+    display: block; /* removes any bottom space caused by inline display */
+    max-width: 100%; /* ensures the image doesn't stretch horizontally */
+    height: auto; /* ensures the image keeps its original aspect ratio */
 }
 .text-container {
     padding: 2px; /* slightly larger padding for mobile */
