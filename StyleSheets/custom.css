@@ -66,7 +66,7 @@ h2,h3 {
 }
 h2 {
     text-align: center;
-    color: rgb(51, 152, 127);
+    /*color: rgb(51, 152, 127);*/
     padding: 0 20px;
 }
 h3 {
@@ -112,10 +112,10 @@ h3 {
     padding: 10px; 
 }
 .text-container {
-    padding: 20px; /* slightly larger padding for mobile */
-    background-color: #f8f9fa; /* equivalent to bg-light */
-    border-radius: .25rem; /* equivalent to rounded */
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); /* equivalent to shadow */
+    padding: 2px; /* slightly larger padding for mobile */
+   /* background-color: #f8f9fa; /* equivalent to bg-light */
+    /*border-radius: .25rem; /* equivalent to rounded */
+    /*box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); /* equivalent to shadow */
 }
 /* Styles for screens 992px and above (laptop and larger screens) */
 @media (min-width: 992px) {
