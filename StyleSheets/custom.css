@@ -139,6 +139,11 @@ h3 {
     display: table;
     clear: both;
 }
+/* Images to take 50% of provided column space. used in Our Story.*/
+@media (min-width: 992px) { /* Bootstrap's 'lg' breakpoint */
+    .half-width-lg {
+        width: 50% !important; /* Override the Bootstrap img-fluid class */
+    }}
 
 /* Styles the testimonials section on our 'Our Story' page, providing a distinct background and shape. */
 .testimonial-container {

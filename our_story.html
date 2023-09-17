@@ -99,7 +99,7 @@
             <h2 class="p-5">Dream Home</h2>
             <div class="row inner-container">
                 <figure class="col-12 col-lg-6 figure-container d-flex align-items-center justify-content-center">
-                    <img src="Images/index/minna.jpg" alt="Mina's profile in Mountain" class="img-fluid">
+                    <img src="Images/stories/minna.jpg" alt="Mina's profile in Mountain" class="img-fluid">
                 </figure>                
                 <div class="col-12 col-lg-6 text-container">
                     <p class="text-muted">
@@ -108,7 +108,6 @@
                         But I had not done ANY investments for myself. Nobody ever told me to start investing at business school. In my family nobody invested. And I never took the time to learn to do it myself.<br><br>
                         Yes, it’s kind of embarrassing. But what really got me upset were the MISSED OPPORTUNITIES. Had I started to invest when I was younger – even just 100 Euros a month – the power of compound interest would have built me a solid financial foundation to use as I like.
                         It’s not that I had any real difficulties in life. I have been very lucky. My husband and I had well paying jobs, but the money just came in and went out. No investing, no long-term perspective, no wealth building.<br><br>
-                        And then something happened.<br><br>
                     </p>
                 </div>
             </div>
@@ -119,6 +118,7 @@
                 </figure>                
                 <div class="col-12 col-lg-6 text-container order-2 order-lg-1">
                     <p class="text-muted">
+                        And then something happened.<br><br>
                         The DREAM home. The one with the big terrace, where a view of the Swiss Alps invites to go hiking. With lovely wooden floors. Where we see our kids’ kindergarten from the window. 
                         When we first visited, I felt instantly at home and saw myself there, walking in slippers, with my coffee cup in my hand.
                         Me and my husband were 38 years old and realized that we had the opportunity of a lifetime to buy our dream home. 
@@ -127,6 +127,15 @@
                         We had to scrape together every penny of cash we had, and it was still not enough.
                         We went to speak with various advisors who sent us in different directions. 
                         After months of painful work, uncertainty, stress and calculations at night, we managed to find a solution, but had to pledge all our pension savings.<br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="row inner-container">
+                <figure class="col-12 col-lg-6 figure-container d-flex align-items-center justify-content-center">
+                    <img src="Images/stories/minna3.jpg" alt="Mina's photo in business style" class="img-fluid half-width-lg">
+                </figure> 
+                <div class="col-12 col-lg-6 text-container">
+                    <p class="text-muted">   
                         It was a humbling experience. 
                         And I decided then and there to take control of our finances, so we would always know where we stand, and to put our money to work.
                         I learned a LOT from this experience.
@@ -294,28 +303,44 @@
         }
     </script>
      <!-- Footer section with additional links and copyright notice -->
-     <footer class="bg-dark text-white pt-5 pb-4">
+    <!-- Resource: The Providers, 'Bootstrap 5 Footer | How to create Footer using Html and Bootstrap'-->
+    <!-- Link: https://www.youtube.com/watch?v=4fexoLuGpeI"-->
+    <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container text-center text-md-left">
             <div class="row text-center text-md-left">
                 <!-- Various sections in the footer with relevant links -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">About</h5>
-                    <p><a href="courses.html" class="text-white" style="text-decoration:none;"> Courses</a></p>
-                    <p><a href="our_story.html" class="text-white" style="text-decoration:none;"> About Minna</a></p>
+                    <p>
+                        <button onclick="redirectTo('courses.html')" class="btn btn-link text-white text-decoration-none p-0">Courses</button>
+                    </p>
+                    <p>
+                        <button onclick="redirectTo('our_story.html')" class="btn btn-link text-white text-decoration-none p-0">About Minna</button>
+                    </p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Register</h5>
-                    <p><a href="our_story.html#intro_call" class="text-white" style="text-decoration:none;"> Schedule Free Intro Chat</a></p>      
-                    <p><a href="courses.html#reserve_course" class="text-white" style="text-decoration:none;"> Reserve seat for Courses</a></p>
+                    <p>
+                        <button onclick="redirectTo('our_story.html#intro_call')" class="btn btn-link text-white text-decoration-none p-0">Schedule Free Intro Chat</button>
+                    </p>
+                    <p>
+                        <button onclick="redirectTo('courses.html')" class="btn btn-link text-white text-decoration-none p-0">Reserve seat for Courses</button>
+                    </p>
                 </div>
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Legal Stuff</h5>
-                    <p><a href="terms_and_conditions.html" class="text-white" style="text-decoration:none;"> Terms & Conditions</a></p>
-                    <p><a href="privacy_policy.html" class="text-white" style="text-decoration:none;"> Privacy Policy</a></p>
+                    <p>
+                        <button onclick="redirectTo('terms_and_conditions.html')" class="btn btn-link text-white text-decoration-none p-0">Terms & Conditions</button>
+                    </p>
+                    <p>
+                        <button onclick="redirectTo('privacy.html')" class="btn btn-link text-white text-decoration-none p-0">Privacy Policy</button>
+                    </p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Contact</h5>
-                    <p><i class="fas fa-envelope mr-3"></i>minna.schmidt@outlook.com</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>minna.schmidt@outlook.com
+                    </p>
                 </div>
             </div>
         </div>
