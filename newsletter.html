@@ -187,6 +187,7 @@
             window.open(url, '_blank');
         }
     </script>
+    
     <!-- Footer section with additional links and copyright notice -->
     <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container text-center text-md-left">
@@ -194,22 +195,36 @@
                 <!-- Various sections in the footer with relevant links -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">About</h5>
-                    <p><a href="courses.html" class="text-white" style="text-decoration:none;"> Courses</a></p>
-                    <p><a href="our_story.html" class="text-white" style="text-decoration:none;"> About Minna</a></p>
+                    <p>
+                        <button onclick="redirectTo('courses.html')" class="btn btn-link text-white text-decoration-none p-0">Courses</button>
+                    </p>
+                    <p>
+                        <button onclick="redirectTo('our_story.html')" class="btn btn-link text-white text-decoration-none p-0">About Minna</button>
+                    </p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Register</h5>
-                    <p><a href="our_story.html#intro_call" class="text-white" style="text-decoration:none;"> Schedule Free Intro Chat</a></p>
-                    <p><a href="course.html#reserve_course" class="text-white" style="text-decoration:none;"> Reserve seat for Courses</a></p>
+                    <p>
+                        <button onclick="redirectTo('our_story.html#intro_call')" class="btn btn-link text-white text-decoration-none p-0">Schedule Free Intro Chat</button>
+                    </p>
+                    <p>
+                        <button onclick="redirectTo('courses.html')" class="btn btn-link text-white text-decoration-none p-0">Reserve seat for Courses</button>
+                    </p>
                 </div>
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Legal Stuff</h5>
-                    <p><a href="terms_and_conditions.html" class="text-white" style="text-decoration:none;"> Terms & Conditions</a></p>
-                    <p><a href="privacy_policy.html" class="text-white" style="text-decoration:none;"> Privacy Policy</a></p>
+                    <p>
+                        <button onclick="redirectTo('terms_and_conditions.html')" class="btn btn-link text-white text-decoration-none p-0">Terms & Conditions</button>
+                    </p>
+                    <p>
+                        <button onclick="redirectTo('privacy.html')" class="btn btn-link text-white text-decoration-none p-0">Privacy Policy</button>
+                    </p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-custom-green">Contact</h5>
-                    <p><i class="fas fa-envelope mr-3"></i>minna.schmidt@outlook.com</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>minna.schmidt@outlook.com
+                    </p>
                 </div>
             </div>
         </div>
