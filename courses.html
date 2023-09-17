@@ -28,6 +28,9 @@
   <body>
     <header>
         <!-- Start of Navigation bar -->
+        <!-- Resource: Adrian Twarog, 'Navbar Bootstrap 5 | Bootstrap Navbar Tutorial'-->
+        <!-- Link: "https://www.youtube.com/watch?v=qNifU_aQRio-->
+
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
                 <!-- Brand Logo and Name -->
@@ -37,12 +40,7 @@
                 </button>                
                 <!-- Mobile Toggle Button -->
                 <button 
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    class="navbar-toggler"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
@@ -53,7 +51,7 @@
                     <ul class="navbar-nav">
                         <!-- Home Dropdown -->
                         <li class="nav-item dropdown">
-                            <button onclick="redirectTo('index.html')" class="nav-link dropdown-toggle" id="navbarDroppdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button onclick="redirectTo('index.html')" class="nav-link dropdown-toggle active" id="navbarDroppdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
                                 Home
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="navbarDroppdownHome">
@@ -74,13 +72,19 @@
                         </li>
                         <!-- Courses Dropdown -->
                         <li class="nav-item dropdown">
-                            <button onclick="redirectTo('courses.html')" class="nav-link dropdown-toggle  active" id="navbarDroppdownCourses" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+                            <button onclick="redirectTo('courses.html')" class="nav-link dropdown-toggle"
+                            id="navbarDroppdownCourses" role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
                                 Courses
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="navbarDroppdownCourses">
                                 <li><button onclick="redirectTo('courses.html')" class="dropdown-item">6 weeks course</button></li>
                                 <li><button onclick="redirectTo('courses.html#all_courses')" class="dropdown-item">All courses</button></li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <button onclick="redirectTo('report.html')" class="nav-link">Report</button>
                         </li>
                     </ul> <!-- End of navbar-nav -->
                 </div> <!-- End of navbar-collapse -->
