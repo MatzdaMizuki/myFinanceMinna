@@ -175,12 +175,12 @@
                     
                     <span class="lead">2-a. Efficient Newsletter Updates</span>
                     <p class="text-muted m-2 p-2">
-                        I developed a straightforward JavaScript script, <a href="path/to/push_articles.js" target="_blank">push_articles.js</a>, that populates the "archive" section of the Newsletter Page. The input JS file, <a href="path/to/articles.js" target="_blank">articles.js</a>, is simple, with a few variables such as date, link, category, and description. Additionally, she only needs to save images in the "newsletter" folder with the date as the name (e.g., "2023-09-13.jpg"), which will automatically add the images to the archive section. This system eliminates her need to navigate complex HTML files whenever she needs to update the website with new newsletters.
+                        I developed a straightforward JavaScript script, <a href="push_articles.js" target="_blank">push_articles.js</a>, that populates the "archive" section of the Newsletter Page. The input JS file, <a href="articles.js" target="_blank">articles.js</a>, is simple, with a few variables such as date, link, category, and description. Additionally, she only needs to save images in the "newsletter" folder with the date as the name (e.g., "2023-09-13.jpg"), which will automatically add the images to the archive section. This system eliminates her need to navigate complex HTML files whenever she needs to update the website with new newsletters.
                     </p>
         
                     <span class="lead">2-b. Course Update with Handlebars.js</span>
                     <p class="text-muted m-2 p-2">
-                        Another challenge was the regular (monthly) update of course dates. For this, I employed Handlebars.js and created <a href="path/to/push_course.html" target="_blank">push_course.html</a> as the backend functionality. The input file she manages, <a href="path/to/course.js" target="_blank">course.js</a>, contains only the start dates for two group lessons. Instead of having her navigate through a lengthy HTML or JS file, she can simply update this one file to reflect new course dates, streamlining the process for her and making it user-friendly.
+                        Another challenge was the regular (monthly) update of course dates. For this, I employed Handlebars.js and created <a href="courses.html" target="_blank">updte table using handlebar</a> as the backend functionality. The input file she manages, <a href="path/to/course.js" target="_blank">course.js</a>, contains only the start dates for two group lessons. Instead of having her navigate through a lengthy HTML or JS file, she can simply update this one file to reflect new course dates, streamlining the process for her and making it user-friendly.
                     </p>
                 </li>
             </ul>
@@ -191,57 +191,76 @@
         <section class="outer-container mb-5">
             <ul>
                 <li class="text-muted">
-                    <span class="lead">Extention to compliment lack of Backend Functionality</span>
+                    <span class="lead">1. Competitor Analysis & Wireframe Creation</span>
                     
                     <p class="text-muted m-2 p-2">
-                        Firstly, I undertook this project for a real business owned by a friend who recently launched her venture. At the onset, the absence of a backend posed a challenge. However, I came across tools like "Form" that allow for input capture and automatically send her an email when a user submits information. I also integrated "Calendly" for booking introductory chats, allowing users to stay on the site rather than redirecting them to another platform. This integration was easier than I had anticipated. 
+                        At the onset of the project, I implemented the lessons I had learned early in my course, focusing on <a href="Report/Competitor_Analysis.pdf">competitor analysis</a> and wireframe creation. Drawing inspiration from the best practices I observed in competitor websites, I quickly realized the potential of the materials my client already possessed. This expedited the design process and allowed me to swiftly present a draft to my client. She was notably impressed with how the draft website already looked so refined in such a short span.
                     </p>
-                    <p class="text-muted m-2 p-2">
-                        By utilizing <a href="https://formspree.io/" target="_blank">Formspree</a>, my website allows my client to receive an email when a web user hits "submit" to register for her course. Similarly, I integrated the <a href="https://calendly.com/" target="_blank">Calendly</a> UI into my website, enabling users to directly view my client's availability. Additionally, I used <a href="https://vimeo.com/" target="_blank">Vimeo</a> to upload two primary videos (each 25MB, even after reducing resolution) without having to upload the MP4 files to a local folder. I consider this achievement a result of working for a real business rather than just academically; it motivated me to seek solutions that supplemented the backend skills I hadn't acquired during my course.
-                    </p>
+                    <blockquote>
+                        "Mizuki's unique approach was evident right from the start. Her rapid analysis of competing websites coupled with her ability to leverage my existing materials was commendable. The swift development of a wireframe sketch not only captured my vision but also provided innovative ideas to enhance my content. The structure she developed ensured the website was not only informative but also user-friendly, light, and captivating."
+                    </blockquote>
                 </li>
                 <li class="text-muted">
-                    <span class="lead">JS to compliment lack of Database management Functionality</span>
+                    <span class="lead">2. Using Instagram as a Newsletter</span>
                     <p class="text-muted m-2 p-2">
-                        
-                        I developed a straightforward JavaScript script that populates the "archive" section of the Newsletter Page. The input JS file is simple, with a few variables such as date, link, category, and description. Additionally, she only needs to save images in the "newsletter" folder with the date as the name (e.g., "2023-09-13.jpg"), which will automatically add the images to the archive section. This eliminates the need for her to navigate through complex HTML files to update the website. Another area she updates regularly (monthly) is the course dates. I employed Handlebars.js for this task. The file she manages contains only the start dates for two group lessons. This innovation, I believe, is due to my client's unfamiliarity with web development coding. It provided me with the impetus to automate and enhance processes, ensuring she can smoothly operate and refresh the website.
+                        When considering the website's newsletter content, our initial idea centered on my client's vast knowledge in finance. Given her expertise, the idea of introducing books, podcasts, and other relevant resources in the newsletter seemed apt. However, my client voiced her concerns about her limited availability to produce consistent, high-quality content for this feature.
                     </p>
+                    <blockquote>
+                        "One of the challenges was my uncertainty about customer engagement through the website. Mizuki and I brainstormed several ideas, including a book review newsletter. While intriguing, I was wary of the time commitment required to produce such content consistently."
+                    </blockquote>
                     <p class="text-muted m-2 p-2">
-                        I incorporated the use of handlebars. Given that my friend will need to update the website after I hand it over and she offers courses monthly, I streamlined the process for her. Instead of navigating a lengthy HTML document, she can simply update a JS file containing variables for upcoming group lesson dates, making it user-friendly.
+                        Taking into account her concerns, I proposed a pivot: to repurpose her existing Instagram content as a pseudo-newsletter for the website. This not only ensured fresh content on the website but also reinforced her primary messages to clients through multiple channels. Furthermore, recognizing the depth and quality of her recommendations, we incorporated a "Resources" page on the website. This page showcases her top recommendations, further establishing her credibility in the field.
                     </p>
+                    <blockquote>
+                        "Mizuki's suggestion to harness my Instagram content for the website was a game-changer. It was an ingenious way to recycle existing content and ensure consistent engagement on the website. The added 'Resources' page amplifies the essence of my recommendations, highlighting the quality I stand for."
+                    </blockquote>
                 </li>
             </ul>
             
         </section>  
+        
         <h3 class="mt-4 mb-3">Evaluation II</h3>
         <section class="outer-container mb-5">
             <ul>
                 <li class="text-muted">
-                    <span class="lead">Missing Functionalities</span>
-                    <p>During our initial meeting with the client, she highlighted several important and useful features that I couldn't complete within the given timeframe:</p>
-                    <ul>
-                        <li>
-                            <span class="bold">Login Capability</span>
-                            <p>
-                                The client expressed interest in sharing course materials, which she is currently distributing via email. She also uses Calendly to schedule individual sessions with her clients. Incorporating a members-only feature would streamline these processes.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="bold">Bootstrap Design</span>
-                            <p>
-                                I admired the subtle and clean design concept of the Harvard Business Review, especially its standout images. However, replicating this style for a beginner-level website made it seem almost "undesigned." I briefly discussed potential Bootstrap templates with the client, but due to time constraints, we decided to revisit this later.
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-                <li class="text-muted">
-                    <span class="lead">Lack of Clear Feedback on Form Submission</span>
-                    <p>
-                        It's essential to provide feedback when users complete actions, such as subscribing to a newsletter or booking a course. This lets them know that their action was successful. I created a specialized feedback page, `formspree_reply.html`, intended to display post-submission since it's in the same directory. Yet, the default Formspree confirmation page shows up instead of my customized one. My design offers a more personalized response, like, "Thank you. If you don't hear back from us within two business days, please contact xxx."
+                    <span class="lead">lack of Login Capability</span>
+                    <p class="m-2 p-2">
+                        In our preliminary discussions, the client highlighted the potential benefit of a dedicated login capability. The intent was to facilitate the sharing of course materials, which she currently disseminates via email. Moreover, she employs Calendly to coordinate individual sessions with her clients. Infusing a members-only feature into the site would greatly refine these operations and foster a more seamless user experience.
                     </p>
                 </li>
+                <li class="text-muted">
+                    <span class="lead">Lack of Professional Feel in Design</span>
+                    <p class="m-2 p-2">
+                        I was deeply inspired by the refined and simplistic design essence of the Harvard Business Review, particularly its prominent imagery. Endeavoring to mirror this aesthetic for an entry-level website inadvertently made it appear somewhat "undesigned". The client and I deliberated over potential Bootstrap templates. However, due to pressing timelines, we collectively resolved to table this discussion for a subsequent phase.
+                    </p>
+                    <p>
+                        I then even realized one day before submission that we could have referred to her other website - she has apparel e-commerce website created by professionals, and I could have refer to their styling. This is something we want to have a look after submission.
+                    </p>
+                </li>
+                <li class="text-muted">
+                    <span class="lead">Form Feedback Customization Not Working</span>
+                    <p class="m-2 p-2">
+                        Providing intuitive feedback post user-actions, such as subscribing to newsletters or enrolling for a course, is quintessential to affirming successful task completion. I architected a bespoke feedback page, `formspree_reply.html`, envisaged to render post-action given its local directory alignment. Disappointingly, the default Formspree affirmation page takes precedence over my tailored version. My design endeavored to offer a more individualized acknowledgment, echoing sentiments like, "Thank you. If our response is not received within two business days, please reach out at xxx."
+                    </p>
+                </li>
+                <li class="text-muted">
+                    <span class="lead">Limitation in Automated Instagram Content Integration</span>
+                    <p class="m-2 p-2">
+                        A more streamlined approach that I envisioned for my client, given her tight schedule, would be the automatic retrieval and display of content from her Instagram profile to her website. This would negate the need for her to manually copy-paste links, images, and excerpts from Instagram. An automated integration would greatly enhance the user experience and ensure consistent content updates. Regrettably, due to time constraints, I couldn't delve into the technical feasibility and execution of this feature. Its potential addition remains an aspirational goal for future iterations of the website.
+                    </p>
+                </li>
+                <li class="text-muted">
+                    <span class="lead">Navbar Accessibility Challenge</span>
+                    <p class="m-2 p-2">
+                        A pivotal aspect of web design is ensuring accessibility for all users. During my accessibility evaluation, I discerned that the &lt;a&gt; links were not emphasized when navigated via the Tab key. As a corrective measure, I transitioned from using &lt;a&gt; tags to &lt;button&gt; tags, enhancing the accessibility quotient of the site. This approach, however, faced resistance when applied to the navbar, specifically due to its intricate dropdown menu functionality. Despite my best efforts, I was unable to reconcile the complexities and ultimately couldn't ensure tab keyboard accessibility for the navbar in my version. 
+                    </p>
+                </li>
+                
+                
+                
             </ul>
         </section>
+
         
         <h3 class="mt-4 mb-3">Resources:</h3>
         <section class="outer-container mb-5">
