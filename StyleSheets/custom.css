@@ -1,6 +1,8 @@
 /* Imports custom fonts for our website from Google Fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap');
+
 
 /*stying for logo next to nav bar*/
 .btn-transparent {
@@ -36,7 +38,7 @@
 h1 {
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: -0.2rem;
     position: absolute;
     width: 100%;  
